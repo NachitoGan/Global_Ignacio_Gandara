@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- Título de la pestaña e icono ilustrativo -->
+
+    <head>
+        <title>Contacto - Fotomanía</title>
+        <link rel="icon" href="./Tarea clase 1/Icono-cámara-vectorizado.png" type="image/png">
+    </head>
+
+    <!-- Cuerpo de la página -->
+
+    <body>
+
+        <!-- Encabezado con imagen, heading principal y barra de navegación con vínculos a otras páginas del sitio -->
+
+        <header>
+            <img src="./Imágenes/Cámara-fotográfica.jpg" alt="Cámara fotográfica" width="300" height="200">
+            <h1>Fotomanía - Fanáticos de la fotografía</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="Redes.html">Redes Sociales</a>
+                    <li>
+                        <a href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <!--Desarrollo de la página-->
+
+        <main>
+
+            <!-- Sección con formulario de contacto para enviar un correo electrónico. Para esto, se utilizó la etiqueta form con atributo
+             action para enviar un mail (entiendo que esto consistiría en llamar a una función de js) y un método HTTP para hacerlo, "post". 
+             Por su parte, el enctype indica el tipo de codificación de los datos al enviarlos, en este caso texto plano. 
+             Dentro del formulario se estableció un fieldset para determinar el grupo de controles dentro suyo, con una leyenda.
+             Cada input está precedido por un label ya que, por lo que leí, es un recurso semántico preferible al placeholder, ya que puede
+             ser leído por motores de búsqueda y lectores para personas con discapacidad visual. Sin embargo, el placeholder me parece 
+             bonito y quería usarlo, jaja.
+             Además de los input simples usé un textarea para que dejen su mensaje, que es un fragmento de texto más largo.
+             Por último botón de enviar y botón de borrar, con un alert que confirma envío o eliminación de datos. Creo que acá me faltaría una 
+             función que permita corroborar que se han enviado, puesto que, por ejemplo, si no completan los datos requeridos pero envían la 
+             información se produce la contradicción de indicar que falta completar algo pero confirmar recepción de datos.-->
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Si tienes alguna pregunta, sugerencia o simplemente quieres ponerte en contacto con nosotros, no dudes en enviarnos un 
+                    correo electrónico a través del siguiente formulario :</p>
+                <form action="mailto:ignaciopgandara@gmail.com" method="post" enctype="text/plain">
+                    <fieldset>
+                        <legend>Formulario de contacto</legend>
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" required><br><br>
+                        
+                        <label for="email">Correo electrónico:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Ejemplo@mail.com" required><br><br>
+                        
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="¡Dejanos tu opinión, duda o inquietud!" required></textarea><br><br>
+                        
+                        <button type="submit" value="Enviar" onclick="alert('¡Gracias por contactarnos! Te responderemos a la brevedad.')">Enviar</button>
+                        <button type="reset" value="Borrar" onclick="alert('Se han borrado los datos ingresados.')">Borrar</button>
+                    </fieldset>
+            </section>
+        </main>
+
+        <hr>
+        
+        <!-- Pie de página con derechos reservados e íconos de contacto a redes sociales -->
+
+        <footer>
+            <small><p>© 2025 Fotomanía. Todos los derechos reservados.</p>
+            <address>Calle Falsa 1234, Ciudad Autónoma de Buenos Aires, CP: 2014</address></small>
+            <br>
+            <a href="https://wa.me/541155156764/?text=¡Hola,%20Ignacio!%20Me%20encantó%20tu%20sitio%20web." target="_blank">
+                <img src="./Imágenes/Logo-WA.jpeg" width="20" height="20" alt="Contacto WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/nacho_gan/" target="_blank">
+                <img src="./Imágenes/Logo-IG.avif" width="20" height="20" alt="Contacto Instagram">
+            </a>
+            <a href="https://www.facebook.com/ignacio.gandara?locale=es_LA" target="_blank">
+                <img src="./Imágenes/Logo-FB.png" width="20" height="20" alt="Contacto Facebook">
+            </a>
+        </footer>
+    </body>

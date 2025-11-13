@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!--Título de la pestaña e icono ilustrativo (el icono lo vectoricé usando Coreldraw con el fin de quitar el fondo).
+    Tengo mis dudas respecto al tamaño. Intenté asignar atributos de ancho y alto pero no percibí cambios al manipular sus valores-->
+
+    <head>
+        <title>Fotomanía</title>
+        <link rel="icon" href="./Imágenes/Icono-cámara-vectorizado.png" type="image/png" width="6" height="1">
+    </head>
+
+    <!-- Cuerpo de la página -->
+
+    <body>
+
+        <!-- Encabezado con imagen, heading principal e índice de navegación con vínculos a otras páginas del sitio-->
+
+        <header>
+            <img src="./Imágenes/Cámara-fotográfica.jpg" alt="Cámara fotográfica" width="300" height="200">
+            <h1>Fotomanía - Fanáticos de la fotografía</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="Redes.html">Redes Sociales</a>
+                    </li>
+                    <li>
+                        <a href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <!-- Desarrollo del contenido de la página con artículo 1, heading secundario, secciones y headings terciarios en cada una. 
+         Información sobre fotografía -->
+
+        <main>
+
+            <article id="artículo-1">
+
+            <h2>Artículo 1: Iniciando en la fotografía</h2>
+
+            <!--índice con navegación a las distintas secciones del artículo-->
+
+            <nav>
+                <ul>
+                    <li><a href="#introduccion">¿Qué es la fotografía? ¿Qué necesito para comenzar?</a></li>
+                    <li><a href="#partes-camara">Partes de una cámara fotográfica</a></li>
+                    <li><a href="#tipos-camaras">Tipos de cámaras fotográficas</a></li>
+                    <li><a href="#exposicion">La exposición</a></li>
+                    <li><a href="#proximamente">Próximamente...</a></li>
+                </ul>
+            </nav>
+
+                <section id="introduccion">
+                    <h3>¿Qué es la fotografía?</h3>
+                        <p>
+                            La fotografía es el arte y la técnica de capturar imágenes mediante la acción de la luz sobre una superficie sensible, 
+                            como una película fotográfica o un sensor digital. A lo largo de la historia, la fotografía ha evolucionado desde sus 
+                            inicios en el siglo XIX hasta convertirse en una forma de expresión artística y documental ampliamente utilizada en todo
+                            el mundo.
+                        </p>
+                        <p>
+                            En este sitio web, exploraremos diversos aspectos de la fotografía, incluyendo técnicas, estilos, equipos y consejos 
+                            para mejorar tus habilidades fotográficas. Ya seas un aficionado o un profesional, aquí encontrarás recursos útiles 
+                            para inspirarte y aprender más sobre este fascinante arte.
+                        </p>
+
+                    <h3>¿Qué necesito para comenzar?</h3>
+                        <p>
+                            Para comenzar en el mundo de la fotografía, necesitarás algunos elementos básicos:
+                        </p>
+                        <ul>
+                            <li>Una <b>cámara fotográfica</b>: Puede ser una cámara digital, una cámara réflex o incluso un teléfono inteligente con una buena cámara.</li>
+                            <li>Conocimiento básico de los conceptos fotográficos: Aprende sobre la <b>exposición</b>, el <b>enfoque</b>, la <b>composición</b> y otros aspectos fundamentales de la fotografía.</li>
+                            <li><b>Práctica constante</b>: La fotografía es una habilidad que mejora con la práctica. Sal a tomar fotos regularmente para perfeccionar tus habilidades.</li>
+                            <li><b>Software de edición</b>: Considera utilizar programas de edición de fotos para mejorar y retocar tus imágenes.</li>
+                        </ul>
+                        <p>
+                            A lo largo de este sitio, te proporcionaremos guías y recursos para ayudarte a comenzar tu viaje en la fotografía.
+                        </p>
+                </section>
+
+                <hr>
+
+                <!-- Imagen interactiva que lleva a hipervínculos sobre las partes de una cámara fotográfica. 
+                La idea es que al hacer clic en cada parte, el usuario sea redirigido a una página externa con información detallada sobre esa 
+                parte específica. Esto se realizó mediante de un usemap de la imagen y un map que linkea la imagen; este tiene áreas definidas a 
+                través de coordenadas que extraje utilizando Paint. Estudié la forma de introducir un mapa de imagen en HTML y cómo definir las 
+                áreas clicables según el shape: rectángulo, círculo o polígono. Según lo visto, el rectángulo define sus coordenadas x e y por sus 
+                esquinas superior izquierda e inferior derecha, el círculo por su centro y radio (que deduje restando la coordenada correspondiente
+                del centro a la coordenada correspondiente de un punto de la circunferencia) y el polígono por cada uno de sus vértices-->
+
+                <section id="partes-camara">
+                    <h3>Partes de una cámara fotográfica</h3>
+                        <p>
+                            A continuación, se muestra una imagen interactiva de las partes principales de una cámara fotográfica. Haga clic en las diferentes áreas para obtener más información sobre cada componente.
+                        </p>
+                        <p>
+                            En próximas actualizaciones, iremos viendo más sobre cada sección de una cámara fotográfica, así como sus diferentes funcionalidades.
+                        </p>
+                        <img src="./Imágenes/Partes-de-una-cámara-fotográfica.jpg" alt="Partes de una cámara fotográfica" usemap="#Partes-de-una-cámara-fotográfica">
+                        <map name="Partes-de-una-cámara-fotográfica">
+                            <area shape="rect" coords="221,84,372,94" href="https://en.wikipedia.org/wiki/Manual_focus" target="_blank" alt="Anillo de enfoque manual">
+                            <area shape="rect" coords="213,126,380,191" href="https://es.wikipedia.org/wiki/Zum" target="_blank" alt="Anillo de zoom">
+                            <area shape="rect" coords="215,213,223,234" href="https://es.wikipedia.org/wiki/Estabilizador_de_imagen" target="_blank" alt="Interuptor estabilizador de imagen">
+                            <area shape="rect" coords="196,255,210,260" href="https://jotabarros.com/aprende-fotografia-el-bloqueo-de-exposicion/" target="_blank" alt="Botón de bloqueo">
+                            <area shape="poly" coords="268,290,260,325,260,333,326,333,326,325,316,290,393,285" href="https://en.wikipedia.org/wiki/Flash_(photography)" target="_blank" alt="Flash integrado">
+                            <area shape="rect" coords="266,336,321,383" href="https://en.wikipedia.org/wiki/Hot_shoe" target="_blank" alt="Zapata para flash externo">
+                            <area shape="rect" coords="420,284,460,294" href="https://en.wikipedia.org/wiki/Shutter_speed#:~:text=Se%20utiliza%201%20%E2%81%84%20125,y%20para%20ciertos%20efectos%20especiales." target="_blank" alt="Dial de obturación">
+                            <area shape="" coords="" href="" alt="">
+                            <area shape="circle" coords="441,316,7" href="https://photographylife.com/what-is-iso-in-photography" target="_blank" alt="Botón ISO">
+                            <area shape="circle" coords="404,361,30" href="https://en.wikipedia.org/wiki/Mode_dial#:~:text=Un%20dial%20de%20modo%20o,giratorio%20o%20desde%20un%20men%C3%BA%20." target="_blank" alt="Dial de modos">
+                            <area shape="rect" coords="456,394,469,401" href="https://www.sony.com.ar/alphauniverse/stories/conoce-los-modos-de-enfoque-de-tu-camara-y-cual-es-el-ideal-para-cada-situacion#:~:text=El%20enfoque%20en%20la%20fotograf%C3%ADa,mayor%20provecho%20a%20este%20recurso." alt="Botón focus">
+                        </map>
+
+                        <p>
+                            La imagen es a modo ilustrativo. No todas tienen las mismas partes ni en la misma ubicación, ya que depende del modelo y 
+                            marca de la cámara fotográfica.
+                            En la próxima sección se presenta una tabla con distintos modelos de cámaras.
+                        </p>
+                </section>
+
+                <hr>
+
+                <section id="tipos-camaras">
+                    <h3>
+                        Tipos de cámaras fotográficas
+                    </h3>
+                        <p>
+                            Existen varios tipos de cámaras fotográficas, cada una con sus propias características y usos. A continuación, se presenta 
+                            una tabla con algunos de los tipos más comunes:
+                        </p>
+
+                        <!-- Tabla elaborada con 3 columnas (Tipo de cámara, Descripción y Ejemplos de uso) y 5 filas (una por cada tipo de cámara).
+                        Las columnas se determinan con las etiquetas th (table header) y las filas con las etiquetas tr (table row).
+                        Cada celda de la tabla se define con la etiqueta td (table data).
+                        Definimos los bordes de la tabla con el atributo border para mejorar su visibilidad. -->
+
+                        <table border="1">
+                            <tr>
+                                <th>Tipo de cámara</th>
+                                <th>Descripción</th>
+                                <th>Ejemplos de uso</th>
+                            </tr>
+                            <tr>
+                                <td>Cámara réflex (DSLR)</td>
+                                <td>Utiliza un espejo para reflejar la luz hacia el visor óptico. Ofrece alta calidad de imagen y control manual.</td>
+                                <td>Fotografía profesional, paisajes, retratos.</td>
+                            </tr>
+                            <tr>
+                                <td>Cámara sin espejo (Mirrorless)</td>
+                                <td>No tiene espejo, lo que permite un diseño más compacto. Ofrece calidad similar a las DSLR.</td>
+                                <td>Fotografía de viaje, eventos, vlogging.</td>
+                            </tr>
+                            <tr>
+                                <td>Cámara compacta</td>
+                                <td>Pequeña y fácil de usar. Ideal para principiantes y fotografía casual.</td>
+                                <td>Fotografía diaria, vacaciones.</td>
+                            </tr>
+                            <tr>
+                                <td>Cámara de medio formato</td>
+                                <td>Utiliza un sensor más grande que las DSLR y mirrorless, ofreciendo una calidad de imagen superior.</td>
+                                <td>Fotografía comercial, moda, paisajes de alta resolución.</td>
+                            </tr>
+                            <tr>
+                                <td>Cámara instantánea</td>
+                                <td>Imprime fotos al instante después de tomarlas. Popular por su estilo retro.</td>
+                                <td>Eventos sociales, fotografía divertida.</td>
+                            </tr>
+                        </table>
+
+                </section>
+
+                <br>
+                <hr>
+
+                <section id="exposicion">
+                    <h3>La exposición</h3>
+                        <p>
+                            Como dijimos al principio, la fotografía consiste en capturar imágenes mediante la acción de la luz sobre una 
+                            superficie sensible. Por lo tanto, la exposición es un concepto fundamental en la fotografía que se refiere a la 
+                            cantidad de luz que llega al sensor o película fotográfica al tomar una fotografía. La exposición afecta directamente 
+                            la apariencia de la imagen final, incluyendo su brillo, contraste y detalles en las sombras y luces.
+                        </p>
+                        <p>
+                            Para lograr una exposición adecuada, los fotógrafos deben controlar tres elementos clave, conocidos como el "triángulo 
+                            de exposición": la apertura del diafragma, la velocidad de obturación y la sensibilidad ISO. En términos simples, estos 
+                            tres elementos trabajan juntos para determinar cuánta luz llega al sensor y cómo se captura la imagen. Por esta razón, 
+                            es importante entender cómo funcionan y cómo ajustarlos para lograr la exposición deseada en diferentes condiciones de
+                            iluminación, alcanzando un equilibrio entre ellos.
+                        </p>
+                        <p>
+                            Veamos de forma gráfica cómo interactúan estos tres elementos del triángulo de exposición:
+                        </p>
+
+                        <!-- Uso de la etiqueta meter para representar gráficamente los tres elementos del triángulo de exposición. -->
+
+                        <p><b>Apertura del diafragma: </b></p><meter min="0" value="15" max="100">Apertura del diafragma</meter>
+                        <p><b>Velocidad de obturación: </b></p><meter min="0" value="30" max="100">Velocidad de obturación</meter>
+                        <p><b>Sensibilidad ISO: </b></p><meter min="0" value="55" max="100">Sensibilidad ISO</meter>
+
+                        <p>
+                            Como puede apreciarse, la apertura del diafragma y la velocidad de obturación tienen valores más bajos, mientras que 
+                            la sensibilidad ISO tiene un valor más alto. Esto se debe a que, en condiciones de iluminación adecuadas, es preferible utilizar
+                            aperturas más pequeñas y velocidades de obturación más rápidas para evitar la sobreexposición y el desenfoque de movimiento.
+                            Sin embargo, en situaciones de poca luz, puede ser necesario aumentar la sensibilidad ISO para compensar la falta de luz, lo que
+                            puede resultar en un mayor ruido en la imagen. Por lo tanto, es importante encontrar un equilibrio entre estos tres elementos 
+                            para lograr la exposición deseada.
+                        </p>
+                        <p>
+                            Continuaremos explorando cada uno de estos elementos en detalle en futuros artículos del sitio web.
+                        </p>
+                    
+                </section>
+
+                <hr>
+                
+                <section id="proximamente">
+                    <h3>Próximamente...</h3>
+                        <p>
+                            En futuras actualizaciones de este sitio web, exploraremos temas más avanzados de fotografía, incluyendo técnicas de composición,
+                            edición de imágenes, tipos de fotografía (como retrato, paisaje, macro, etc.) y consejos para fotógrafos de todos los niveles. 
+                            ¡Mantente atento para más contenido emocionante!
+                        </p>
+                </section>
+
+            </article>
+
+        </main>
+
+        <hr>
+
+        <!-- Pie de página con derechos reservados e íconos de contacto a redes sociales. Los íconos redirigen a las mismas páginas que en la 
+        sección de Redes Sociales, pero en tamaño más pequeño (utilizando los atributos width y height). Para lograr esto, utilicé la etiqueta 
+        a (anchor), copié las URL de mi Instagram y Facebook (a falta de páginas oficiales de Fotomanía) y estudié la forma de insertar mi 
+        número de WhatsApp en un hipervínculo que abra directamente el chat con un mensaje predeterminado. -->
+
+        <footer>
+            <small><p>© 2025 Fotomanía. Todos los derechos reservados.</p>
+            <address>Calle Falsa 1234, Ciudad Autónoma de Buenos Aires, CP: 2014</address></small>
+            <br>
+            <a href="https://wa.me/541155156764/?text=¡Hola,%20Ignacio!%20Me%20encantó%20tu%20sitio%20web." target="_blank">
+                <img src="./Imágenes/Logo-WA.jpeg" width="20" height="20" alt="Contacto WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/nacho_gan/" target="_blank">
+                <img src="./Imágenes/Logo-IG.avif" width="20" height="20" alt="Contacto Instagram">
+            </a>
+            <a href="https://www.facebook.com/ignacio.gandara?locale=es_LA" target="_blank">
+                <img src="./Imágenes/Logo-FB.png" width="20" height="20" alt="Contacto Facebook">
+            </a>
+        </footer>
+    </body>
+</html>
