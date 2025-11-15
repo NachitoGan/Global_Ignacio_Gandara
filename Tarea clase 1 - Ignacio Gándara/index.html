@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!--Profe: Modifiqué la indentación según lo que había observado en la primera tarea: que solo debía hacerse cuando los elementos
+eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
+
     <!--Título de la pestaña e icono ilustrativo (el icono lo vectoricé usando Coreldraw con el fin de quitar el fondo).
     Tengo mis dudas respecto al tamaño. Intenté asignar atributos de ancho y alto pero no percibí cambios al manipular sus valores-->
 
     <head>
         <title>Fotomanía</title>
-        <link rel="icon" href="./Imágenes/Icono-cámara-vectorizado.png" type="image/png" width="6" height="1">
+        <link rel="icon" href="./Assets/Imágenes/Icono-cámara-vectorizado.png" type="image/png" width="6" height="1">
     </head>
 
     <!-- Cuerpo de la página -->
@@ -15,28 +18,37 @@
 
         <!-- Encabezado con imagen, heading principal e índice de navegación con vínculos a otras páginas del sitio-->
 
-        <header>
-            <img src="./Imágenes/Cámara-fotográfica.jpg" alt="Cámara fotográfica" width="300" height="200">
-            <h1>Fotomanía - Fanáticos de la fotografía</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="Redes.html">Redes Sociales</a>
-                    </li>
-                    <li>
-                        <a href="Contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+        <header id="inicio">
+        <img src="./Assets/Imágenes/Cámara-fotográfica.jpg" alt="Cámara fotográfica" width="300" height="200">
+        <h1>Fotomanía - Fanáticos de la fotografía</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="Redes.html">Redes Sociales</a>
+                </li>
+                <li>
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p>Artículos:</p>
+        <ul>
+            <li>
+                <a href="index.html#artículo-1">Artículo 1: Iniciando en la fotografía</a>
+            </li>
+            <li>
+                <a href="index.html#artículo-2">Artículo 2: ¡Feria de fotografía en diciembre!</a>
+            </li>
+
         </header>
 
         <hr>
 
-        <!-- Desarrollo del contenido de la página con artículo 1, heading secundario, secciones y headings terciarios en cada una. 
-         Información sobre fotografía -->
+        <!-- Desarrollo del contenido de la página con artículo 2 primero por ser el último en publicarse, luego el 1-->
 
         <main>
 
@@ -46,127 +58,195 @@
 
                 <nav>
                     <ul>
-                        <li><a href=""></a></li>
+                        <li><a href="./index.html#intro-articulo-2">Introducción</a></li>
+                        <li><a href="./index.html#actividades">Actividades</a></li>
+                        <li><a href="./index.html#evento-portfolio">Evento PORTFOLIO ACTIVO</a></li>
+                        <li><a href="./index.html#ubicacion-y-fecha">Ubicación y fecha</a></li>
+                        <li><a href="./index.html#extra">Extra</a></li>
                     </ul>
                 </nav>
 
-                <section id="introducción">
+                <section id="intro-articulo-2">
                     <h3>Introducción</h3>
 
                     <p>
-                        No bien publicamos el primer artículo de nuestro blog sobre fotografía, nos enteramos de 
-                        una noticia que nos emocionó mucho: ¡habrá una feria de fotografía en diciembre! Una oportunidad
-                        única para los amantes de este maravilloso arte. 
+                    No bien publicamos el primer artículo de nuestro blog sobre fotografía, nos enteramos de 
+                    una noticia que nos emocionó mucho: ¡habrá una feria de fotografía en diciembre! Una oportunidad
+                    única para los amantes de este maravilloso arte. 
                     </p>
 
                     <p>
-                        La feria reunirá a fotógrafos, entusiastas y profesionales del sector, ofreciendo una
-                        plataforma para compartir conocimientos, exhibir obras y descubrir las últimas tendencias
-                        Contará con la presencia de destacados fotógrafos, talleres, exposiciones y stands de 
-                        equipos fotográficos. Será una ocasión perfecta para aprender, compartir experiencias y
-                        descubrir nuevas tendencias en el mundo de la fotografía.
+                    La feria reunirá a fotógrafos, entusiastas y profesionales del sector, ofreciendo una
+                    plataforma para compartir conocimientos, exhibir obras y descubrir las últimas tendencias
+                    Contará con la presencia de destacados fotógrafos, talleres, exposiciones y stands de 
+                    equipos fotográficos. Será una ocasión perfecta para aprender, compartir experiencias y
+                    descubrir nuevas tendencias en el mundo de la fotografía.
                     </p>
 
-                <section id="actividades destacadas">
-                    <h3>Actividades destacadas</h3>
+                    <p>
+                    En este artículo, te contaremos todo lo que necesitas saber sobre esta feria de fotografía,
+                    desde las fechas y ubicación hasta las actividades y eventos que se llevarán a cabo.
+                    </p>
 
                     <p>
-                        Durante la feria, se llevarán a cabo diversas actividades que prometen ser 
-                        emocionantes e inspiradoras para todos los asistentes.
+                    Comencemos con un poco de <i>hype</i>: Aquí va un video de la primera edición de la feria, llevada
+                    a cabo en el 2023, para ir empapándote un poco del ambiente y la energía que se vive en este tipo 
+                    de eventos.
+                    </p>
+
+                    <!--Video de la primera edición de la Feria. Intenté embeberlo con el iframe que proporciona Youtube, pero sale
+                    error 153. Indagué sobre este código de error en ChatGPT, pero no me proporcionó ayuda para resolverlo. Por lo tanto,
+                    se me ocurrió descargarlo, alojarlo en mi Google Drive y compartirlo desde ahí. Me ayudé nuevamente con ChatGPT para
+                    aprender a embeberlo de esa forma, ya que la primera vez también salía un error.-->
+                    
+                    <iframe
+                    src="https://drive.google.com/file/d/1xcrhgI7wAXdj8QVhXHTukecnZ1EJv0Z2/preview"
+                    width="640"
+                    height="480"
+                    allow="autoplay"
+                    frameborder="0">
+                    </iframe>
 
                 </section>
 
-                <section>
-                    <h3>Talleres y conferencias</h3>
+                <hr>
+
+                <section id="actividades">
+                    <h3>Actividades</h3>
 
                     <p>
-                        Habrá una serie de talleres y conferencias impartidas por fotógrafos reconocidos,
-                        donde se abordarán temas como técnicas de fotografía, edición digital, composición
-                        y más. Los asistentes podrán aprender de los mejores y mejorar sus habilidades
-                        fotográficas.
+                    Durante la feria, se llevarán a cabo diversas actividades que prometen ser emocionantes e inspiradoras para todos 
+                    los asistentes.
                     </p>
+
+                    <p>Algunas de las actividades destacadas incluyen:</p>
+
+                    <ul>
+                        <li>Feria de artistas, editores y emprendedores con más de 130 proyectos.</li>
+                        <li>Workshop "Portfolio Activo": actividad arancelada con inscripción previa.</li>
+                        <li>Workshop "Quimigramas": creación de imágenes experimentales sin cámara, gratuito y sin inscripción.</li>
+                        <li>Cuarto Oscuro Portátil: impresión analógica en vivo (solo domingo, con inscripción).</li>
+                        <li>Enmarcado en vivo y kiosko de impresión fine art.</li>
+                        <li>Exposiciones: "Cooking Potato Stories", "Chaco Forever" y "Manifiesto de un cuerpo errante".</li>
+                    </ul>
+
+                    <p>
+                    ¿No tienes tiempo para asistir a todas las actividades? No te preocupes, aquí te presentamos
+                    un Calendario de Google que elaboramos nosotros mismos con las fechas y horarios de cada una 
+                    de las actividades destacadas de la feria. Así podrás planificar tu visita y no perderte nada.
+                    </p>
+
+                    <p>
+                    Si aún es noviembre, haz click en la flecha hacia la derecha para ver las actividades de diciembre. 
+                    Puedes agregar el calendario a tu propia cuenta de Google Calendar para recibir recordatorios, 
+                    cliqueando "Agregar Calendario de Google" en la parte inferior izquierda o puedes tocar los 
+                    eventos que te interesan y luego "+ Copiar a mi calendario" para agregarlos individualmente.
+                    </p>
+
+                    <p>
+                    <b>NOTA:</b> Recuerda que algunos talleres requieren inscripción previa y pueden tener un costo
+                    asociado. Asegúrate de revisar los detalles en el calendario y registrarte con anticipación si 
+                    es necesario.
+                    </p>
+
+                    <iframe src="https://calendar.google.com/calendar/embed?src=a43703e3a3f58d49b6fbc4a44cc3ef766968cb4dad2ccb12ed0a4172756eed66%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires" 
+                    style="border: 0" 
+                    width="800" 
+                    height="600" 
+                    frameborder="0" 
+                    scrolling="no">
+                    </iframe>
+
                 </section>
 
-                <section>
-                    <h3>Exposiciones fotográficas</h3>
+                <hr>
+
+                <section id="evento-portfolio">
+                    <h3>Evento PORTFOLIO ACTIVO</h3>
 
                     <p>
-                        La feria contará con varias exposiciones fotográficas que mostrarán el trabajo
-                        de fotógrafos locales e internacionales. Será una oportunidad para apreciar
-                        diferentes estilos y enfoques en la fotografía, así como para inspirarse
-                        con nuevas ideas.
+                    Uno de los eventos más destacados de la feria es el PORTFOLIO ACTIVO, un espacio destinado a 
+                    reactivar la creatividad fotográfica, explorar nuevas ideas, ampliar tu portfolio y conectarte 
+                    con otros fotógrafos en dos escenarios especialmente curados, combinando práctica guiada, 
+                    dirección de modelos y una experiencia completa dentro del universo de la feria.
                     </p>
 
-                        <h4>Algunos ejemplos</h4>
+                    <p>Te invitamos a participar en este evento único, completando el formulario aquí debajo:</p>
 
-                        <p>
-                            A continuación les presentamos una serie de casos específicos en los que se pueden 
-                            apreciar diferentes estilos fotográficos, presentados en un cuadro comparativo. 
-                        </p>
-
-                        
+                    <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeNTIYnhB0EE1XVbVciAnGRxLASMw5fRLr8ULqRwKR0bC2Beg/viewform?embedded=true"
+                    width="640"
+                    height="900"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">
+                    </iframe>
 
                 </section>
 
-                </section id="ubicación y fecha">
+                <hr>
 
-                    <h3>
-                        Ubicación y fecha
-                    </h3>
+                </section id="ubicacion-y-fecha">
+
+                    <h3>Ubicación y fecha</h3>
+
+                    <p>La feria se llevará a cabo los días 6 y 7 de 15 a 21 hs, en Fraga 648, CABA.</p>
 
                     <p>
-                        La feria se llevará a cabo los días 6 y 7 de 15 a 21 hs, en Fraga 648, CABA.
+                    Toca el botón para ampliar el mapa o "Cómo llegar" para obtener indicaciones desde tu ubicación,
+                    utilizando Google Maps. La app de Google te dirá el mejor camino en auto, transporte público o 
+                    caminando.
                     </p>
+
+                    <p>También puedes hacer zoom y desplazarte por el mapa para explorar los alrededores de la feria.</p>
+
+                    <p>¡Nos encontramos allí para seguir aprendiendo y disfrutando de este maravilloso mundo!</p>
 
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7710383970234!2d-58.45555412452564!3d-34.5846595564915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e596069c7d%3A0xf4b758352ad7532d!2sFraga%20648%2C%20C1427%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1763063136554!5m2!1ses-419!2sar" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">Mapa interactivo</iframe>
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
 
-                <section>
-                    <h3>Primeros desarrollos</h3>
-                        <p>
-                            La historia de la fotografía comienza en el siglo XIX con los primeros experimentos en la 
-                            captura de imágenes. En 1826, Joseph Nicéphore Niépce logró crear la primera fotografía 
-                            permanente utilizando una cámara oscura y una placa de peltre recubierta con betún de Judea. 
-                            Esta imagen, conocida como "Vista desde la ventana en Le Gras", requirió una exposición de 
-                            ocho horas para capturar la escena.
-                        </p>
-                        <p>
-                            Posteriormente, en 1839, Louis Daguerre presentó el daguerrotipo, un proceso que permitía 
-                            obtener imágenes más nítidas y detalladas en un tiempo de exposición mucho más corto. Este 
-                            avance marcó el inicio de la fotografía comercial y popularizó el uso de cámaras entre el 
-                            público en general.
-                        </p>
-
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iGGSgquvo6k?si=6UdtgO4vcy669XJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>Joseph Nicéphore Niépce</iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uphF05yBpGw?si=1fyYEHIhg1yWrQXv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
                 </section>
 
-                <section>
-                    <h3>Fotografía moderna y digital</h3>
-                        <p>
-                            A lo largo del siglo XX, la fotografía continuó evolucionando con la introducción de nuevas tecnologías 
-                            y técnicas. La invención de la película fotográfica flexible por George Eastman en 1888 permitió la 
-                            creación de cámaras más compactas y accesibles, lo que llevó a un aumento significativo en la popularidad 
-                            de la fotografía.
-                        </p>
-                        <p>
-                            En la segunda mitad del siglo XX, la fotografía en color se volvió cada vez más común, y la llegada de 
-                            las cámaras digitales en la década de 1990 revolucionó la forma en que capturamos y compartimos imágenes. 
-                            La fotografía digital permitió a los fotógrafos ver sus imágenes al instante, editar y compartir fotos 
-                            fácilmente a través de Internet.
-                        </p>
-                        <p>
-                            Hoy en día, la fotografía digital es omnipresente, con cámaras integradas en teléfonos inteligentes y 
-                            una amplia gama de software de edición disponible para fotógrafos de todos los niveles. La historia de 
-                            la fotografía continúa desarrollándose a medida que nuevas tecnologías emergen, como la inteligencia 
-                            artificial y la realidad aumentada, que prometen transformar aún más el arte y la ciencia de capturar 
-                            imágenes.
-                        </p>
+                <hr>
+
+                <section id="extra">
+                    <h3>Extra</h3>
+
+                    <p>
+                    Como <i>yapa</i> de la cuestión, te dejamos una playlist de Spotify que utilizamos 
+                    frecuentemente mientras editamos nuestras fotografías. ¡Esperamos que la disfrutes tanto
+                    como nosotros!
+                    </p>
+
+                    <p>
+                    Te esperamos en la feria para seguir compartiendo nuestra pasión por la fotografía y que nos cuentes qué 
+                    música sueles escuchar mientras editas tus fotos.
+                    </p>
+
+                    <iframe 
+                    data-testid="embed-iframe" 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/playlist/2FR3urz4gd20aQZRQArHgo?utm_source=generator" 
+                    width="100%" 
+                    height="352" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                    </iframe>
                 </section>
 
             </article>
+
+            <hr>
+
+            <a href="index.html"><button>Volver al inicio</button></a>
 
             <article id="artículo-1">
 
@@ -176,41 +256,45 @@
 
             <nav>
                 <ul>
-                    <li><a href="#introduccion">¿Qué es la fotografía? ¿Qué necesito para comenzar?</a></li>
-                    <li><a href="#partes-camara">Partes de una cámara fotográfica</a></li>
-                    <li><a href="#tipos-camaras">Tipos de cámaras fotográficas</a></li>
-                    <li><a href="#exposicion">La exposición</a></li>
-                    <li><a href="#proximamente">Próximamente...</a></li>
+                    <li><a href="./index.html#introduccion">¿Qué es la fotografía? ¿Qué necesito para comenzar?</a></li>
+                    <li><a href="./index.html#partes-camara">Partes de una cámara fotográfica</a></li>
+                    <li><a href="./index.html#tipos-camaras">Tipos de cámaras fotográficas</a></li>
+                    <li><a href="./index.html#exposicion">La exposición</a></li>
+                    <li><a href="./index.html#proximamente">Próximamente...</a></li>
                 </ul>
             </nav>
 
                 <section id="introduccion">
                     <h3>¿Qué es la fotografía?</h3>
-                        <p>
-                            La fotografía es el arte y la técnica de capturar imágenes mediante la acción de la luz sobre una superficie sensible, 
-                            como una película fotográfica o un sensor digital. A lo largo de la historia, la fotografía ha evolucionado desde sus 
-                            inicios en el siglo XIX hasta convertirse en una forma de expresión artística y documental ampliamente utilizada en todo
-                            el mundo.
-                        </p>
-                        <p>
-                            En este sitio web, exploraremos diversos aspectos de la fotografía, incluyendo técnicas, estilos, equipos y consejos 
-                            para mejorar tus habilidades fotográficas. Ya seas un aficionado o un profesional, aquí encontrarás recursos útiles 
-                            para inspirarte y aprender más sobre este fascinante arte.
-                        </p>
+                    <p>
+                    La fotografía es el arte y la técnica de capturar imágenes mediante la acción de la luz sobre una superficie sensible, 
+                    como una película fotográfica o un sensor digital. A lo largo de la historia, la fotografía ha evolucionado desde sus 
+                    inicios en el siglo XIX hasta convertirse en una forma de expresión artística y documental ampliamente utilizada en todo
+                    el mundo.
+                    </p>
+                    
+                    <p>
+                    En este sitio web, exploraremos diversos aspectos de la fotografía, incluyendo técnicas, estilos, equipos y consejos 
+                    para mejorar tus habilidades fotográficas. Ya seas un aficionado o un profesional, aquí encontrarás recursos útiles 
+                    para inspirarte y aprender más sobre este fascinante arte.
+                    </p>
 
                     <h3>¿Qué necesito para comenzar?</h3>
-                        <p>
-                            Para comenzar en el mundo de la fotografía, necesitarás algunos elementos básicos:
-                        </p>
-                        <ul>
-                            <li>Una <b>cámara fotográfica</b>: Puede ser una cámara digital, una cámara réflex o incluso un teléfono inteligente con una buena cámara.</li>
-                            <li>Conocimiento básico de los conceptos fotográficos: Aprende sobre la <b>exposición</b>, el <b>enfoque</b>, la <b>composición</b> y otros aspectos fundamentales de la fotografía.</li>
-                            <li><b>Práctica constante</b>: La fotografía es una habilidad que mejora con la práctica. Sal a tomar fotos regularmente para perfeccionar tus habilidades.</li>
-                            <li><b>Software de edición</b>: Considera utilizar programas de edición de fotos para mejorar y retocar tus imágenes.</li>
-                        </ul>
-                        <p>
-                            A lo largo de este sitio, te proporcionaremos guías y recursos para ayudarte a comenzar tu viaje en la fotografía.
-                        </p>
+                    
+                    <p>Para comenzar en el mundo de la fotografía, necesitarás algunos elementos básicos:</p>
+                        
+                    <ul>
+                        <li>Una <b>cámara fotográfica</b>: Puede ser una cámara digital, una cámara réflex o incluso un teléfono inteligente con una buena cámara.</li>
+                        <li>Conocimiento básico de los conceptos fotográficos: Aprende sobre la <b>exposición</b>, el <b>enfoque</b>, la <b>composición</b> y otros aspectos fundamentales de la fotografía.</li>
+                        <li><b>Práctica constante</b>: La fotografía es una habilidad que mejora con la práctica. Sal a tomar fotos regularmente para perfeccionar tus habilidades.</li>
+                        <li><b>Software de edición</b>: Considera utilizar programas de edición de fotos para mejorar y retocar tus imágenes.</li>
+                    </ul>
+
+                    <p>
+                    A lo largo de este sitio, te proporcionaremos guías y recursos para ayudarte a comenzar tu viaje en la 
+                    fotografía.
+                    </p>
+
                 </section>
 
                 <hr>
@@ -224,83 +308,173 @@
                 del centro a la coordenada correspondiente de un punto de la circunferencia) y el polígono por cada uno de sus vértices-->
 
                 <section id="partes-camara">
+                    
                     <h3>Partes de una cámara fotográfica</h3>
-                        <p>
-                            A continuación, se muestra una imagen interactiva de las partes principales de una cámara fotográfica. Haga clic en las diferentes áreas para obtener más información sobre cada componente.
-                        </p>
-                        <p>
-                            En próximas actualizaciones, iremos viendo más sobre cada sección de una cámara fotográfica, así como sus diferentes funcionalidades.
-                        </p>
-                        <img src="./Imágenes/Partes-de-una-cámara-fotográfica.jpg" alt="Partes de una cámara fotográfica" usemap="#Partes-de-una-cámara-fotográfica">
-                        <map name="Partes-de-una-cámara-fotográfica">
-                            <area shape="rect" coords="221,84,372,94" href="https://en.wikipedia.org/wiki/Manual_focus" target="_blank" alt="Anillo de enfoque manual">
-                            <area shape="rect" coords="213,126,380,191" href="https://es.wikipedia.org/wiki/Zum" target="_blank" alt="Anillo de zoom">
-                            <area shape="rect" coords="215,213,223,234" href="https://es.wikipedia.org/wiki/Estabilizador_de_imagen" target="_blank" alt="Interuptor estabilizador de imagen">
-                            <area shape="rect" coords="196,255,210,260" href="https://jotabarros.com/aprende-fotografia-el-bloqueo-de-exposicion/" target="_blank" alt="Botón de bloqueo">
-                            <area shape="poly" coords="268,290,260,325,260,333,326,333,326,325,316,290,393,285" href="https://en.wikipedia.org/wiki/Flash_(photography)" target="_blank" alt="Flash integrado">
-                            <area shape="rect" coords="266,336,321,383" href="https://en.wikipedia.org/wiki/Hot_shoe" target="_blank" alt="Zapata para flash externo">
-                            <area shape="rect" coords="420,284,460,294" href="https://en.wikipedia.org/wiki/Shutter_speed#:~:text=Se%20utiliza%201%20%E2%81%84%20125,y%20para%20ciertos%20efectos%20especiales." target="_blank" alt="Dial de obturación">
-                            <area shape="" coords="" href="" alt="">
-                            <area shape="circle" coords="441,316,7" href="https://photographylife.com/what-is-iso-in-photography" target="_blank" alt="Botón ISO">
-                            <area shape="circle" coords="404,361,30" href="https://en.wikipedia.org/wiki/Mode_dial#:~:text=Un%20dial%20de%20modo%20o,giratorio%20o%20desde%20un%20men%C3%BA%20." target="_blank" alt="Dial de modos">
-                            <area shape="rect" coords="456,394,469,401" href="https://www.sony.com.ar/alphauniverse/stories/conoce-los-modos-de-enfoque-de-tu-camara-y-cual-es-el-ideal-para-cada-situacion#:~:text=El%20enfoque%20en%20la%20fotograf%C3%ADa,mayor%20provecho%20a%20este%20recurso." alt="Botón focus">
-                        </map>
+                        
+                    <p>
+                    A continuación, se muestra una imagen interactiva de las partes principales de una cámara fotográfica. Haga clic 
+                    en las diferentes áreas para obtener más información sobre cada componente.
+                    </p>
+                    
+                    <p>
+                    En próximas actualizaciones, iremos viendo más sobre cada sección de una cámara fotográfica, así como sus 
+                    diferentes funcionalidades.
+                    </p>
+                        
+                    <img src="./Assets/Imágenes/Partes-de-una-cámara-fotográfica.jpg" alt="Partes de una cámara fotográfica" usemap="#Partes-de-una-cámara-fotográfica">
+                    <map name="Partes-de-una-cámara-fotográfica">
+                        <area shape="rect" coords="221,84,372,94" href="https://en.wikipedia.org/wiki/Manual_focus" target="_blank" alt="Anillo de enfoque manual">
+                        <area shape="rect" coords="213,126,380,191" href="https://es.wikipedia.org/wiki/Zum" target="_blank" alt="Anillo de zoom">
+                        <area shape="rect" coords="215,213,223,234" href="https://es.wikipedia.org/wiki/Estabilizador_de_imagen" target="_blank" alt="Interuptor estabilizador de imagen">
+                        <area shape="rect" coords="196,255,210,260" href="https://jotabarros.com/aprende-fotografia-el-bloqueo-de-exposicion/" target="_blank" alt="Botón de bloqueo">
+                        <area shape="poly" coords="268,290,260,325,260,333,326,333,326,325,316,290,393,285" href="https://en.wikipedia.org/wiki/Flash_(photography)" target="_blank" alt="Flash integrado">
+                        <area shape="rect" coords="266,336,321,383" href="https://en.wikipedia.org/wiki/Hot_shoe" target="_blank" alt="Zapata para flash externo">
+                        <area shape="rect" coords="420,284,460,294" href="https://en.wikipedia.org/wiki/Shutter_speed#:~:text=Se%20utiliza%201%20%E2%81%84%20125,y%20para%20ciertos%20efectos%20especiales." target="_blank" alt="Dial de obturación">
+                        <area shape="" coords="" href="" alt="">
+                        <area shape="circle" coords="441,316,7" href="https://photographylife.com/what-is-iso-in-photography" target="_blank" alt="Botón ISO">
+                        <area shape="circle" coords="404,361,30" href="https://en.wikipedia.org/wiki/Mode_dial#:~:text=Un%20dial%20de%20modo%20o,giratorio%20o%20desde%20un%20men%C3%BA%20." target="_blank" alt="Dial de modos">
+                        <area shape="rect" coords="456,394,469,401" href="https://www.sony.com.ar/alphauniverse/stories/conoce-los-modos-de-enfoque-de-tu-camara-y-cual-es-el-ideal-para-cada-situacion#:~:text=El%20enfoque%20en%20la%20fotograf%C3%ADa,mayor%20provecho%20a%20este%20recurso." alt="Botón focus">
+                    </map>
 
-                        <p>
-                            La imagen es a modo ilustrativo. No todas tienen las mismas partes ni en la misma ubicación, ya que depende del modelo y 
-                            marca de la cámara fotográfica.
-                            En la próxima sección se presenta una tabla con distintos modelos de cámaras.
-                        </p>
+                    <p>
+                    La imagen es a modo ilustrativo. No todas tienen las mismas partes ni en la misma ubicación, ya que depende del 
+                    modelo y marca de la cámara fotográfica. En la próxima sección se presenta una tabla con distintos modelos de 
+                    cámaras.
+                    </p>
+
                 </section>
 
                 <hr>
 
                 <section id="tipos-camaras">
-                    <h3>
-                        Tipos de cámaras fotográficas
-                    </h3>
-                        <p>
-                            Existen varios tipos de cámaras fotográficas, cada una con sus propias características y usos. A continuación, se presenta 
-                            una tabla con algunos de los tipos más comunes:
-                        </p>
+                    <h3>Tipos de cámaras fotográficas</h3>
+                        
+                    <p>
+                    Existen varios tipos de cámaras fotográficas, cada una con sus propias características y usos. A continuación, se presenta 
+                    una tabla con algunos de los tipos más comunes:
+                    </p>
 
-                        <!-- Tabla elaborada con 3 columnas (Tipo de cámara, Descripción y Ejemplos de uso) y 5 filas (una por cada tipo de cámara).
-                        Las columnas se determinan con las etiquetas th (table header) y las filas con las etiquetas tr (table row).
-                        Cada celda de la tabla se define con la etiqueta td (table data).
-                        Definimos los bordes de la tabla con el atributo border para mejorar su visibilidad. -->
-
-                        <table border="1">
+            <!-- Tabla elaborada con 3 columnas (Tipo de cámara, Descripción y Ejemplos de uso) y 5 filas (una por cada tipo de cámara).
+            Las columnas se determinan con las etiquetas th (table header) y las filas con las etiquetas tr (table row).
+            Cada celda de la tabla se define con la etiqueta td (table data).
+            Definimos los bordes de la tabla con el atributo border para mejorar su visibilidad. -->
+            
+                    <table border="1">
+                        <thead>
                             <tr>
                                 <th>Tipo de cámara</th>
                                 <th>Descripción</th>
                                 <th>Ejemplos de uso</th>
                             </tr>
+                        </thead>
+                        <tbody>
                             <tr>
-                                <td>Cámara réflex (DSLR)</td>
-                                <td>Utiliza un espejo para reflejar la luz hacia el visor óptico. Ofrece alta calidad de imagen y control manual.</td>
-                                <td>Fotografía profesional, paisajes, retratos.</td>
+                                <td>
+                                    Cámara réflex (DSLR)
+                                    <br> 
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Nikon_DSLR_camera_D850.jpg" 
+                                    alt="" width="450" height="350">
+                                </td>
+                                <td>
+                                    Utiliza un espejo para reflejar la luz hacia el visor óptico. Ofrece alta calidad de imagen y control manual.
+                                    <br>
+                                    <img src="https://blog.iterin.com/wp-content/uploads/2024/02/espejo-de-senales.png" 
+                                    alt=""  width="450" height="350">
+                                </td>
+                                <td>
+                                    Fotografía profesional, paisajes, retratos.
+                                    <br>
+                                    <img src="https://mymodernmet.com/wp/wp-content/uploads/2019/10/aaron-reed-nature-photography-8.jpg" 
+                                    alt="" width="450" height="350">
+                                </td>
                             </tr>
                             <tr>
-                                <td>Cámara sin espejo (Mirrorless)</td>
-                                <td>No tiene espejo, lo que permite un diseño más compacto. Ofrece calidad similar a las DSLR.</td>
-                                <td>Fotografía de viaje, eventos, vlogging.</td>
+                                <td>
+                                    Cámara sin espejo (Mirrorless)
+                                    <br>
+                                    <img src="https://www.sony.com.ar/image/ea640bf3f5e38949c3a1bf06117b4885?fmt=jpeg&wid=800&qlt=43" 
+                                    alt="" width="450" height="350">
+                                </td>
+                                <td>
+                                    No tiene espejo, lo que permite un diseño más compacto. Ofrece calidad similar a las DSLR.
+                                    <br>
+                                    <img src="https://web.serplus.es/wp-content/uploads/2023/05/Imagen1-2.jpg" 
+                                    alt="" width="450" height="350">
+                                </td>
+                                <td>
+                                    Fotografía de viaje, eventos, vlogging.
+                                    <br>
+                                    <img src="https://dus6dayednven.cloudfront.net/app/uploads/2022/06/A7C-04.jpg" 
+                                    alt="" width="450" height="350">
+                                </td>
                             </tr>
                             <tr>
-                                <td>Cámara compacta</td>
-                                <td>Pequeña y fácil de usar. Ideal para principiantes y fotografía casual.</td>
-                                <td>Fotografía diaria, vacaciones.</td>
+                                <td>
+                                    Cámara compacta
+                                    <br>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdZAGqRg3uDwkfokN4AvVv3noN-P8nJ6yD9A&s" 
+                                    alt="" width="450" height="350">
+                                </td>
+                                <td>
+                                    Pequeña y fácil de usar. Ideal para principiantes y fotografía casual.
+                                    <br>
+                                    <img src="https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202206/13/00110114289290____7__640x640.jpg" 
+                                    alt="" width="450" height="350">
+                                </td>
+                                <td>
+                                    Fotografía diaria, vacaciones.
+                                    <br>
+                                    <img src="https://hips.hearstapps.com/hmg-prod/images/camaras-compactas-para-vaca-1561561193.jpg?crop=0.6487505893446488xw:1xh;center,top&resize=1200:*" 
+                                    alt="" width="450" height="350">
+                                </td>
                             </tr>
                             <tr>
-                                <td>Cámara de medio formato</td>
-                                <td>Utiliza un sensor más grande que las DSLR y mirrorless, ofreciendo una calidad de imagen superior.</td>
-                                <td>Fotografía comercial, moda, paisajes de alta resolución.</td>
+                                <td>
+                                    Cámara de medio formato
+                                    <br>
+                                    <img src="https://casanovafoto.b-cdn.net/media/catalog/product/cache/834865466098acd255e1409d8a14c38f/f/r/front-view_x2d_ptt.jpg" 
+                                    alt="" width="450" height="350">
+                                </td>
+                                <td>
+                                    Utiliza un sensor más grande que las DSLR y mirrorless, ofreciendo una calidad de imagen superior.
+                                    <br>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sensor_sizes_overlaid_inside.svg/330px-Sensor_sizes_overlaid_inside.svg.png" 
+                                    alt="" width="450" height="350">
+                                </td>
+                                <td>
+                                    Fotografía comercial, moda, paisajes de alta resolución.
+                                    <br>
+                                    <img src="https://i.blogs.es/c5b682/formato-medio-x-phase-c1/1366_2000.jpg" 
+                                    alt="" width="450" height="350">
+                                </td>
                             </tr>
                             <tr>
-                                <td>Cámara instantánea</td>
-                                <td>Imprime fotos al instante después de tomarlas. Popular por su estilo retro.</td>
-                                <td>Eventos sociales, fotografía divertida.</td>
+                                <td>
+                                    Cámara instantánea
+                                    <br>
+                                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_977303-MLA95494981308_102025-T.webp" 
+                                    alt="" width="450" height="350">
+                                </td>
+                                <td>
+                                    Imprime fotos al instante después de tomarlas. Popular por su estilo retro.
+                                    <br>
+                                    <img src="https://mall.icbc.com.ar/33387705-large_default/camara-instantanea-fujifilm-instax-mini-12.jpg" 
+                                    alt="" width="450" height="350">
+                                </td>
+                                <td>
+                                    Eventos sociales, fotografía divertida.
+                                    <br>
+                                    <img src="https://fujiiei.com.ar/wp-content/uploads/2025/01/online-and-social-Summer-Fun-1-1024x815.jpg" 
+                                    alt="" width="450" height="350">
+                                </td>
                             </tr>
-                        </table>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3"><i>Fuente: Elaboración propia basada en conocimientos generales sobre fotografía.</i></td>
+                            </tr>
+                        </tfoot>                            
+                    </table>
 
                 </section>
 
@@ -309,52 +483,57 @@
 
                 <section id="exposicion">
                     <h3>La exposición</h3>
-                        <p>
-                            Como dijimos al principio, la fotografía consiste en capturar imágenes mediante la acción de la luz sobre una 
-                            superficie sensible. Por lo tanto, la exposición es un concepto fundamental en la fotografía que se refiere a la 
-                            cantidad de luz que llega al sensor o película fotográfica al tomar una fotografía. La exposición afecta directamente 
-                            la apariencia de la imagen final, incluyendo su brillo, contraste y detalles en las sombras y luces.
-                        </p>
-                        <p>
-                            Para lograr una exposición adecuada, los fotógrafos deben controlar tres elementos clave, conocidos como el "triángulo 
-                            de exposición": la apertura del diafragma, la velocidad de obturación y la sensibilidad ISO. En términos simples, estos 
-                            tres elementos trabajan juntos para determinar cuánta luz llega al sensor y cómo se captura la imagen. Por esta razón, 
-                            es importante entender cómo funcionan y cómo ajustarlos para lograr la exposición deseada en diferentes condiciones de
-                            iluminación, alcanzando un equilibrio entre ellos.
-                        </p>
-                        <p>
-                            Veamos de forma gráfica cómo interactúan estos tres elementos del triángulo de exposición:
-                        </p>
+                        
+                    <p>
+                    Como dijimos al principio, la fotografía consiste en capturar imágenes mediante la acción de la luz sobre una 
+                    superficie sensible. Por lo tanto, la exposición es un concepto fundamental en la fotografía que se refiere a la 
+                    cantidad de luz que llega al sensor o película fotográfica al tomar una fotografía. La exposición afecta directamente 
+                    la apariencia de la imagen final, incluyendo su brillo, contraste y detalles en las sombras y luces.
+                    </p>
+                        
+                    <p>
+                    Para lograr una exposición adecuada, los fotógrafos deben controlar tres elementos clave, conocidos como el "triángulo 
+                    de exposición": la apertura del diafragma, la velocidad de obturación y la sensibilidad ISO. En términos simples, estos 
+                    tres elementos trabajan juntos para determinar cuánta luz llega al sensor y cómo se captura la imagen. Por esta razón, 
+                    es importante entender cómo funcionan y cómo ajustarlos para lograr la exposición deseada en diferentes condiciones de
+                    iluminación, alcanzando un equilibrio entre ellos.
+                    </p>
+                        
+                    <p>Veamos de forma gráfica cómo interactúan estos tres elementos del triángulo de exposición:</p>
 
-                        <!-- Uso de la etiqueta meter para representar gráficamente los tres elementos del triángulo de exposición. -->
+                    <!-- Uso de la etiqueta meter para representar gráficamente los tres elementos del triángulo de exposición. -->
+                        
+                    <p><b>Apertura del diafragma: </b></p><meter min="0" value="15" max="100">Apertura del diafragma</meter>
 
-                        <p><b>Apertura del diafragma: </b></p><meter min="0" value="15" max="100">Apertura del diafragma</meter>
-                        <p><b>Velocidad de obturación: </b></p><meter min="0" value="30" max="100">Velocidad de obturación</meter>
-                        <p><b>Sensibilidad ISO: </b></p><meter min="0" value="55" max="100">Sensibilidad ISO</meter>
-
-                        <p>
-                            Como puede apreciarse, la apertura del diafragma y la velocidad de obturación tienen valores más bajos, mientras que 
-                            la sensibilidad ISO tiene un valor más alto. Esto se debe a que, en condiciones de iluminación adecuadas, es preferible utilizar
-                            aperturas más pequeñas y velocidades de obturación más rápidas para evitar la sobreexposición y el desenfoque de movimiento.
-                            Sin embargo, en situaciones de poca luz, puede ser necesario aumentar la sensibilidad ISO para compensar la falta de luz, lo que
-                            puede resultar en un mayor ruido en la imagen. Por lo tanto, es importante encontrar un equilibrio entre estos tres elementos 
-                            para lograr la exposición deseada.
-                        </p>
-                        <p>
-                            Continuaremos explorando cada uno de estos elementos en detalle en futuros artículos del sitio web.
-                        </p>
+                    <p><b>Velocidad de obturación: </b></p><meter min="0" value="30" max="100">Velocidad de obturación</meter>
+                        
+                    <p><b>Sensibilidad ISO: </b></p><meter min="0" value="55" max="100">Sensibilidad ISO</meter>
+                        
+                    <p>
+                    Como puede apreciarse, la apertura del diafragma y la velocidad de obturación tienen valores más bajos, mientras que 
+                    la sensibilidad ISO tiene un valor más alto. Esto se debe a que, en condiciones de iluminación adecuadas, es preferible utilizar
+                    aperturas más pequeñas y velocidades de obturación más rápidas para evitar la sobreexposición y el desenfoque de movimiento.
+                    Sin embargo, en situaciones de poca luz, puede ser necesario aumentar la sensibilidad ISO para compensar la falta de luz, lo que
+                    puede resultar en un mayor ruido en la imagen. Por lo tanto, es importante encontrar un equilibrio entre estos tres elementos 
+                    para lograr la exposición deseada.
+                    </p>
+                        
+                    <p>Continuaremos explorando cada uno de estos elementos en detalle en futuros artículos del sitio web.</p>
                     
                 </section>
 
                 <hr>
                 
                 <section id="proximamente">
+                    
                     <h3>Próximamente...</h3>
-                        <p>
-                            En futuras actualizaciones de este sitio web, exploraremos temas más avanzados de fotografía, incluyendo técnicas de composición,
-                            edición de imágenes, tipos de fotografía (como retrato, paisaje, macro, etc.) y consejos para fotógrafos de todos los niveles. 
-                            ¡Mantente atento para más contenido emocionante!
-                        </p>
+                        
+                    <p>
+                    En futuras actualizaciones de este sitio web, exploraremos temas más avanzados de fotografía, incluyendo técnicas de composición,
+                    edición de imágenes, tipos de fotografía (como retrato, paisaje, macro, etc.) y consejos para fotógrafos de todos los niveles. 
+                    ¡Mantente atento para más contenido emocionante!
+                    </p>
+
                 </section>
 
             </article>
@@ -362,6 +541,8 @@
         </main>
 
         <hr>
+
+        <a href="./index.html"><button>Volver al inicio</button></a>
 
         <!-- Pie de página con derechos reservados e íconos de contacto a redes sociales. Los íconos redirigen a las mismas páginas que en la 
         sección de Redes Sociales, pero en tamaño más pequeño (utilizando los atributos width y height). Para lograr esto, utilicé la etiqueta 
@@ -373,13 +554,13 @@
             <address>Calle Falsa 1234, Ciudad Autónoma de Buenos Aires, CP: 2014</address></small>
             <br>
             <a href="https://wa.me/541155156764/?text=¡Hola,%20Ignacio!%20Me%20encantó%20tu%20sitio%20web." target="_blank">
-                <img src="./Imágenes/Logo-WA.jpeg" width="20" height="20" alt="Contacto WhatsApp">
+                <img src="./Assets/Imágenes/Logo-WA.jpeg" width="20" height="20" alt="Contacto WhatsApp">
             </a>
             <a href="https://www.instagram.com/nacho_gan/" target="_blank">
-                <img src="./Imágenes/Logo-IG.avif" width="20" height="20" alt="Contacto Instagram">
+                <img src="./Assets/Imágenes/Logo-IG.avif" width="20" height="20" alt="Contacto Instagram">
             </a>
             <a href="https://www.facebook.com/ignacio.gandara?locale=es_LA" target="_blank">
-                <img src="./Imágenes/Logo-FB.png" width="20" height="20" alt="Contacto Facebook">
+                <img src="./Assets/Imágenes/Logo-FB.png" width="20" height="20" alt="Contacto Facebook">
             </a>
         </footer>
     </body>
