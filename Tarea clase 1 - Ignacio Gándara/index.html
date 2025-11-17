@@ -10,18 +10,14 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
     <head>
         <title>Fotomanía</title>
         <link rel="icon" href="./Assets/Imágenes/Icono-cámara-vectorizado.png" type="image/png" width="6" height="1">
+        <link rel="stylesheet" href="./Styles/styles.css">
     </head>
 
     <!-- Cuerpo de la página -->
 
     <body>
 
-        <!-- Encabezado con imagen, heading principal e índice de navegación con vínculos a otras páginas del sitio-->
-
-        <header id="inicio">
-        <img src="./Assets/Imágenes/Cámara-fotográfica.jpg" alt="Cámara fotográfica" width="300" height="200">
-        <h1>Fotomanía - Fanáticos de la fotografía</h1>
-        <nav>
+        <nav id="menú-principal">
             <ul>
                 <li>
                     <a href="index.html">Inicio</a>
@@ -35,28 +31,32 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
             </ul>
         </nav>
 
-        <p>Artículos:</p>
-        <ul>
-            <li>
-                <a href="index.html#artículo-1">Artículo 1: Iniciando en la fotografía</a>
-            </li>
-            <li>
-                <a href="index.html#artículo-2">Artículo 2: ¡Feria de fotografía en diciembre!</a>
-            </li>
+        <!-- Encabezado con imagen, heading principal e índice de navegación con vínculos a otras páginas del sitio-->
+
+        <header id="inicio">
+
+            <div class="dropdown">
+                <button class="drop-btn">Artículos</button>
+                <div class="dropdown-content">
+                    <a href="./index.html#articulo-1">Artículo 1</a>
+                    <a href="./index.html#articulo-2">Artículo 2</a>
+                </div>
+            </div>
+            
+            <img id="foto-principal" src="./Assets/Imágenes/Cámara-fotográfica.jpg" alt="Cámara fotográfica" width="300" height="200">
+            <h1>Fotomanía - Fanáticos de la fotografía</h1>
 
         </header>
-
-        <hr>
 
         <!-- Desarrollo del contenido de la página con artículo 2 primero por ser el último en publicarse, luego el 1-->
 
         <main>
 
-            <article id="artículo 2">
+            <article id="articulo-2">
 
                 <h2>Artículo 2: ¡Feria de fotografía en diciembre!</h2>
 
-                <nav>
+                <nav class="menú-secundario">
                     <ul>
                         <li><a href="./index.html#intro-articulo-2">Introducción</a></li>
                         <li><a href="./index.html#actividades">Actividades</a></li>
@@ -110,8 +110,6 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
 
                 </section>
 
-                <hr>
-
                 <section id="actividades">
                     <h3>Actividades</h3>
 
@@ -161,8 +159,6 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
 
                 </section>
 
-                <hr>
-
                 <section id="evento-portfolio">
                     <h3>Evento PORTFOLIO ACTIVO</h3>
 
@@ -187,9 +183,7 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
 
                 </section>
 
-                <hr>
-
-                </section id="ubicacion-y-fecha">
+                <section id="ubicacion-y-fecha">
 
                     <h3>Ubicación y fecha</h3>
 
@@ -215,8 +209,6 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
                     </iframe>
 
                 </section>
-
-                <hr>
 
                 <section id="extra">
                     <h3>Extra</h3>
@@ -247,11 +239,9 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
 
             </article>
 
-            <hr>
-
             <a href="index.html"><button>Volver al inicio</button></a>
 
-            <article id="artículo-1">
+            <article id="articulo-1">
 
             <h2>Artículo 1: Iniciando en la fotografía</h2>
 
@@ -300,8 +290,6 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
 
                 </section>
 
-                <hr>
-
                 <!-- Imagen interactiva que lleva a hipervínculos sobre las partes de una cámara fotográfica. 
                 La idea es que al hacer clic en cada parte, el usuario sea redirigido a una página externa con información detallada sobre esa 
                 parte específica. Esto se realizó mediante de un usemap de la imagen y un map que linkea la imagen; este tiene áreas definidas a 
@@ -347,8 +335,6 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
 
                 </section>
 
-                <hr>
-
                 <section id="tipos-camaras">
                     <h3>Tipos de cámaras fotográficas</h3>
                         
@@ -361,128 +347,136 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
             Las columnas se determinan con las etiquetas th (table header) y las filas con las etiquetas tr (table row).
             Cada celda de la tabla se define con la etiqueta td (table data).
             Definimos los bordes de la tabla con el atributo border para mejorar su visibilidad. -->
-            
-                    <table border="1">
-                        <thead>
-                            <tr>
-                                <th>Tipo de cámara</th>
-                                <th>Descripción</th>
-                                <th>Ejemplos de uso</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    Cámara réflex (DSLR)
-                                    <br> 
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Nikon_DSLR_camera_D850.jpg" 
-                                    alt="" width="450" height="350">
-                                </td>
-                                <td>
-                                    Utiliza un espejo para reflejar la luz hacia el visor óptico. Ofrece alta calidad de imagen y control manual.
-                                    <br>
-                                    <img src="https://blog.iterin.com/wp-content/uploads/2024/02/espejo-de-senales.png" 
-                                    alt=""  width="450" height="350">
-                                </td>
-                                <td>
-                                    Fotografía profesional, paisajes, retratos.
-                                    <br>
-                                    <img src="https://mymodernmet.com/wp/wp-content/uploads/2019/10/aaron-reed-nature-photography-8.jpg" 
-                                    alt="" width="450" height="350">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Cámara sin espejo (Mirrorless)
-                                    <br>
-                                    <img src="https://www.sony.com.ar/image/ea640bf3f5e38949c3a1bf06117b4885?fmt=jpeg&wid=800&qlt=43" 
-                                    alt="" width="450" height="350">
-                                </td>
-                                <td>
-                                    No tiene espejo, lo que permite un diseño más compacto. Ofrece calidad similar a las DSLR.
-                                    <br>
-                                    <img src="https://web.serplus.es/wp-content/uploads/2023/05/Imagen1-2.jpg" 
-                                    alt="" width="450" height="350">
-                                </td>
-                                <td>
-                                    Fotografía de viaje, eventos, vlogging.
-                                    <br>
-                                    <img src="https://dus6dayednven.cloudfront.net/app/uploads/2022/06/A7C-04.jpg" 
-                                    alt="" width="450" height="350">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Cámara compacta
-                                    <br>
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdZAGqRg3uDwkfokN4AvVv3noN-P8nJ6yD9A&s" 
-                                    alt="" width="450" height="350">
-                                </td>
-                                <td>
-                                    Pequeña y fácil de usar. Ideal para principiantes y fotografía casual.
-                                    <br>
-                                    <img src="https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202206/13/00110114289290____7__640x640.jpg" 
-                                    alt="" width="450" height="350">
-                                </td>
-                                <td>
-                                    Fotografía diaria, vacaciones.
-                                    <br>
-                                    <img src="https://hips.hearstapps.com/hmg-prod/images/camaras-compactas-para-vaca-1561561193.jpg?crop=0.6487505893446488xw:1xh;center,top&resize=1200:*" 
-                                    alt="" width="450" height="350">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Cámara de medio formato
-                                    <br>
-                                    <img src="https://casanovafoto.b-cdn.net/media/catalog/product/cache/834865466098acd255e1409d8a14c38f/f/r/front-view_x2d_ptt.jpg" 
-                                    alt="" width="450" height="350">
-                                </td>
-                                <td>
-                                    Utiliza un sensor más grande que las DSLR y mirrorless, ofreciendo una calidad de imagen superior.
-                                    <br>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sensor_sizes_overlaid_inside.svg/330px-Sensor_sizes_overlaid_inside.svg.png" 
-                                    alt="" width="450" height="350">
-                                </td>
-                                <td>
-                                    Fotografía comercial, moda, paisajes de alta resolución.
-                                    <br>
-                                    <img src="https://i.blogs.es/c5b682/formato-medio-x-phase-c1/1366_2000.jpg" 
-                                    alt="" width="450" height="350">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Cámara instantánea
-                                    <br>
-                                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_977303-MLA95494981308_102025-T.webp" 
-                                    alt="" width="450" height="350">
-                                </td>
-                                <td>
-                                    Imprime fotos al instante después de tomarlas. Popular por su estilo retro.
-                                    <br>
-                                    <img src="https://mall.icbc.com.ar/33387705-large_default/camara-instantanea-fujifilm-instax-mini-12.jpg" 
-                                    alt="" width="450" height="350">
-                                </td>
-                                <td>
-                                    Eventos sociales, fotografía divertida.
-                                    <br>
-                                    <img src="https://fujiiei.com.ar/wp-content/uploads/2025/01/online-and-social-Summer-Fun-1-1024x815.jpg" 
-                                    alt="" width="450" height="350">
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="3"><i>Fuente: Elaboración propia basada en conocimientos generales sobre fotografía.</i></td>
-                            </tr>
-                        </tfoot>                            
-                    </table>
+                    
+                    <label for="modal-toggle" class="btn">Ver tabla</label>
+                    <input type="checkbox" id="modal-toggle">
+                    <div class="modal">
+                        <div class="modal-contenido">
+                            
+                            <label for="modal-toggle" class="cerrar">x</label>
+
+                            <table border="1">
+                                <thead>
+                                    <tr>
+                                        <th>Tipo de cámara</th>
+                                        <th>Descripción</th>
+                                        <th>Ejemplos de uso</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Cámara réflex (DSLR)
+                                            <br> 
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Nikon_DSLR_camera_D850.jpg" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                        <td>
+                                            Utiliza un espejo para reflejar la luz hacia el visor óptico. Ofrece alta calidad de imagen y control manual.
+                                            <br>
+                                            <img src="https://blog.iterin.com/wp-content/uploads/2024/02/espejo-de-senales.png" 
+                                            alt=""  width="450" height="350">
+                                        </td>
+                                        <td>
+                                            Fotografía profesional, paisajes, retratos.
+                                            <br>
+                                            <img src="https://mymodernmet.com/wp/wp-content/uploads/2019/10/aaron-reed-nature-photography-8.jpg" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Cámara sin espejo (Mirrorless)
+                                            <br>
+                                            <img src="https://www.sony.com.ar/image/ea640bf3f5e38949c3a1bf06117b4885?fmt=jpeg&wid=800&qlt=43" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                        <td>
+                                            No tiene espejo, lo que permite un diseño más compacto. Ofrece calidad similar a las DSLR.
+                                            <br>
+                                            <img src="https://web.serplus.es/wp-content/uploads/2023/05/Imagen1-2.jpg" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                        <td>
+                                            Fotografía de viaje, eventos, vlogging.
+                                            <br>
+                                            <img src="https://dus6dayednven.cloudfront.net/app/uploads/2022/06/A7C-04.jpg" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Cámara compacta
+                                            <br>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdZAGqRg3uDwkfokN4AvVv3noN-P8nJ6yD9A&s" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                        <td>
+                                            Pequeña y fácil de usar. Ideal para principiantes y fotografía casual.
+                                            <br>
+                                            <img src="https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202206/13/00110114289290____7__640x640.jpg" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                        <td>
+                                            Fotografía diaria, vacaciones.
+                                            <br>
+                                            <img src="https://hips.hearstapps.com/hmg-prod/images/camaras-compactas-para-vaca-1561561193.jpg?crop=0.6487505893446488xw:1xh;center,top&resize=1200:*" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Cámara de medio formato
+                                            <br>
+                                            <img src="https://casanovafoto.b-cdn.net/media/catalog/product/cache/834865466098acd255e1409d8a14c38f/f/r/front-view_x2d_ptt.jpg" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                        <td>
+                                            Utiliza un sensor más grande que las DSLR y mirrorless, ofreciendo una calidad de imagen superior.
+                                            <br>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sensor_sizes_overlaid_inside.svg/330px-Sensor_sizes_overlaid_inside.svg.png" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                        <td>
+                                            Fotografía comercial, moda, paisajes de alta resolución.
+                                            <br>
+                                            <img src="https://i.blogs.es/c5b682/formato-medio-x-phase-c1/1366_2000.jpg" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Cámara instantánea
+                                            <br>
+                                            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_977303-MLA95494981308_102025-T.webp" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                        <td>
+                                            Imprime fotos al instante después de tomarlas. Popular por su estilo retro.
+                                            <br>
+                                            <img src="https://mall.icbc.com.ar/33387705-large_default/camara-instantanea-fujifilm-instax-mini-12.jpg" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                        <td>
+                                            Eventos sociales, fotografía divertida.
+                                            <br>
+                                            <img src="https://fujiiei.com.ar/wp-content/uploads/2025/01/online-and-social-Summer-Fun-1-1024x815.jpg" 
+                                            alt="" width="450" height="350">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3"><i>Fuente: Elaboración propia basada en conocimientos generales sobre fotografía.</i></td>
+                                    </tr>
+                                </tfoot>                            
+                            </table>
+                        </div>
+                    </div>      
 
                 </section>
 
                 <br>
-                <hr>
 
                 <section id="exposicion">
                     <h3>La exposición</h3>
@@ -506,11 +500,11 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
 
                     <!-- Uso de la etiqueta meter para representar gráficamente los tres elementos del triángulo de exposición. -->
                         
-                    <p><b>Apertura del diafragma: </b></p><meter min="0" value="15" max="100">Apertura del diafragma</meter>
+                    <p><b>Apertura del diafragma: </b></p><meter class="meter" min="0" value="15" max="100">Apertura del diafragma</meter>
 
-                    <p><b>Velocidad de obturación: </b></p><meter min="0" value="30" max="100">Velocidad de obturación</meter>
+                    <p><b>Velocidad de obturación: </b></p><meter class="meter" min="0" value="30" max="100">Velocidad de obturación</meter>
                         
-                    <p><b>Sensibilidad ISO: </b></p><meter min="0" value="55" max="100">Sensibilidad ISO</meter>
+                    <p><b>Sensibilidad ISO: </b></p><meter class="meter" min="0" value="55" max="100">Sensibilidad ISO</meter>
                         
                     <p>
                     Como puede apreciarse, la apertura del diafragma y la velocidad de obturación tienen valores más bajos, mientras que 
@@ -524,8 +518,6 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
                     <p>Continuaremos explorando cada uno de estos elementos en detalle en futuros artículos del sitio web.</p>
                     
                 </section>
-
-                <hr>
                 
                 <section id="proximamente">
                     
@@ -542,8 +534,6 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
             </article>
 
         </main>
-
-        <hr>
 
         <a href="./index.html"><button>Volver al inicio</button></a>
 

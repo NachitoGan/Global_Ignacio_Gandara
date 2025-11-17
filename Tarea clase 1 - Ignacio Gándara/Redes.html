@@ -6,32 +6,42 @@
     <head>
         <title>Redes - Fotomanía</title>
         <link rel="icon" href="./Assets/Imágenes/Icono-cámara-vectorizado.png" type="image/png">
+        <link rel="stylesheet" href="./Styles/styles.css">
     </head>
 
     <!-- Cuerpo de la página -->
 
     <body>
 
+        <nav id="menú-principal">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="Redes.html">Redes Sociales</a>
+                <li>
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
         <!-- Encabezado con imagen, heading principal y barra de navegación con vínculos a otras páginas del sitio -->
 
         <header>
-            <img src="./Assets/Imágenes/Cámara-fotográfica.jpg" alt="Cámara fotográfica" width="300" height="200">
-            <h1>Fotomanía - Fanáticos de la fotografía</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="Redes.html">Redes Sociales</a>
-                    <li>
-                        <a href="Contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
 
-        <hr>
+            <div class="dropdown">
+                <button class="drop-btn">Artículos</button>
+                <div class="dropdown-content">
+                    <a href="./index.html#articulo-1">Artículo 1</a>
+                    <a href="./index.html#articulo-2">Artículo 2</a>
+                </div>
+            </div>
+
+            <img id="foto-principal" src="./Assets/Imágenes/Cámara-fotográfica.jpg" alt="Cámara fotográfica" width="300" height="200">
+            <h1>Fotomanía - Fanáticos de la fotografía</h1>
+
+        </header>
 
         <!--Desarrollo de la página-->
 
@@ -39,23 +49,27 @@
 
             <!-- Sección con enlaces a redes sociales utilizando el mismo método que en el footer, pero con imágenes más grandes-->
 
-            <section id="redes-sociales">
+            <section>
                 <h2>Redes sociales</h2>
-                <p>Síguenos en nuestras redes sociales para estar al tanto de las últimas novedades y actualizaciones:</p>
-                <a href="https://www.instagram.com/nacho_gan/" target="_blank">
-                    <img src="./Assets/Imágenes/Logo-IG.avif" width="50" height="50" alt="Contacto Instagram">
-                </a>
-                <a href="https://www.facebook.com/ignacio.gandara?locale=es_LA" target="_blank">
-                    <img src="./Assets/Imágenes/Logo-FB.png" width="50" height="50" alt="Contacto Facebook">
-                </a>
-                <p>¡O escribinos al WhatsApp!</p>
-                <a href="https://wa.me/5491155156764/?text=¡Hola,%20Ignacio!%20Me%20encantó%20tu%20sitio%20web." target="_blank">
-                    <img src="./Assets/Imágenes/Logo-WA.jpeg" width="50" height="50" alt="Contacto WhatsApp">
-                </a>
+                <div id="contenedor-redes">
+                    <div id="redes-sociales">
+                        <p>Síguenos en nuestras redes sociales para estar al tanto de las últimas novedades y actualizaciones:</p>
+                        <a href="https://www.instagram.com/nacho_gan/" target="_blank">
+                            <img src="./Assets/Imágenes/Logo-IG.avif" width="50" height="50" alt="Contacto Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/ignacio.gandara?locale=es_LA" target="_blank">
+                            <img src="./Assets/Imágenes/Logo-FB.png" width="50" height="50" alt="Contacto Facebook">
+                        </a>
+                    </div>
+                    <div id="whatsapp-contacto">
+                        <p>¡O escríbenos al WhatsApp! Tu mensaje es valioso para nosotros.</p>
+                        <a href="https://wa.me/5491155156764/?text=¡Hola,%20Ignacio!%20Me%20encantó%20tu%20sitio%20web." target="_blank">
+                            <img src="./Assets/Imágenes/Logo-WA.jpeg" width="50" height="50" alt="Contacto WhatsApp">
+                        </a>
+                    </div>
+                </div>
             </section>
         </main>
-
-        <hr>
         
         <!-- Pie de página con derechos reservados e íconos de contacto a redes sociales -->
 
