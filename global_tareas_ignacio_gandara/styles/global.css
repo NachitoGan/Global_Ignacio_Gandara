@@ -111,6 +111,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    text-decoration: none;
 }
 
 nav#menú-principal {
@@ -119,12 +120,14 @@ nav#menú-principal {
     border: #2E4053 solid 1px;
     border-radius: 10px;
     background-color: #ffffff;
+    text-decoration: none;
 }  
 
 nav#menú-principal ul li {
     display: inline;
     margin: 0 15px;
     text-align: center;
+    text-decoration: none;
 }
 
 footer {
