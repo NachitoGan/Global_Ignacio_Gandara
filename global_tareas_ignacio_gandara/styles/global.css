@@ -14,6 +14,32 @@ body {
     background-color: #E5E7E9;
 }
 
+nav#menú-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F4F6F7;
+    margin-top: 0;
+    margin-bottom: 500px;
+    border: #2E4053 1px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #ffffff;
+    text-align: center;
+} 
+
+nav#menú-principal ul li {
+    display: inline;
+    margin: 0 15px;
+    text-align: center;
+}
+
 /* Contenedor principal para el dropdown para artículos*/
 .dropdown {
   position: relative; /* Necesario para que el menú desplegable se posicione respecto a él */
@@ -63,6 +89,14 @@ body {
 /* Muestra el botón desplegable al pasar el ratón por encima de él */
 .dropdown:hover .dropdown-btn {
   background-color: #3e8e41;
+}
+
+article {
+    scroll-margin-top: 80px; /* Para que mi barra de navegación no tape la parte superior del contenido */
+}
+
+section {
+    scroll-margin-top: 80px; /* Idem anterior */
 }
 
 button {
@@ -122,32 +156,6 @@ embargo, esto no solucionó el problema. Evidentemente algo se me está pasando 
 nav a:active {
     background-color: #4592a0;
     color: white;
-}
-
-nav#menú-principal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #F4F6F7;
-    margin-top: 0;
-    margin-bottom: 15px;
-    border: #2E4053 1px;
-    border-radius: 10px 0px 10px 0px;
-    background-color: #ffffff;
-    text-align: center;
-} 
-
-nav#menú-principal ul li {
-    display: inline;
-    margin: 0 15px;
-    text-align: center;
 }
 
 footer {

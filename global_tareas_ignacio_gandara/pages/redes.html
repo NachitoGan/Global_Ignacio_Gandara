@@ -5,7 +5,7 @@
 
     <head>
         <title>Redes - Fotomanía</title>
-        <link rel="icon" href="../assets/imagenes/Icono-cámara-vectorizado.png" type="image/png">
+        <link rel="icon" href="../assets/imagenes/icono_head_link.png" type="image/png">
         <link rel="stylesheet" href="../styles/global.css">
         <link rel="stylesheet" href="../styles/contacto.css">
     </head>
@@ -14,23 +14,11 @@
 
     <body>
 
+<!-- Coloqué la barra de navegación principal antes del header, para hacer que, con CSS, este se mantuviera todo el tiempo
+     visible (con position: fixed), agregando un margin-top: 80px al header para que no lo tapara. Además, entre el dropdown 
+     de artículos y las opciones de navegación entre páginas incluí un display: flexbox. -->
+
         <nav id="menú-principal">
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="Redes.html">Redes Sociales</a>
-                <li>
-                    <a href="Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Encabezado con imagen, heading principal y barra de navegación con vínculos a otras páginas del sitio -->
-
-        <header>
-
             <div class="dropdown">
                 <button class="drop-btn">Artículos</button>
                 <div class="dropdown-content">
@@ -38,6 +26,27 @@
                     <a href="./index.html#articulo-2">Artículo 2</a>
                 </div>
             </div>
+            <div class="páginas">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="redes.html">Redes Sociales</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="anexos.html">Anexos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Encabezado con imagen, heading principal y barra de navegación con vínculos a otras páginas del sitio -->
+
+        <header>
 
             <img id="foto-principal" src="../assets/imagenes/camara_header.jpg" alt="Cámara fotográfica" width="300" height="200">
             <h1>Fotomanía - Fanáticos de la fotografía</h1>
