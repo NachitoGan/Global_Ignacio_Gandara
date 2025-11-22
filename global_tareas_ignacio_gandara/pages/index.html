@@ -19,8 +19,9 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
     <body>
 
     <!-- Coloqué la barra de navegación principal antes del header, para hacer que, con CSS, este se mantuviera todo el tiempo
-     visible (con position: fixed), agregando un margin-top: 80px al header para que no lo tapara. Además, entre el dropdown 
-     de artículos y las opciones de navegación entre páginas incluí un display: flexbox. -->
+     visible (con position: fixed) en la parte superior, agregando un margin-top: 80px al header para que no lo tapara. 
+     No sé si es lo correcto, pero me pareció que estaba por fuera de la estructura básica dentro del body. 
+     Además, entre el dropdown de artículos y las opciones de navegación entre páginas incluí un display: flexbox. -->
 
         <nav id="menú-principal">
             <div class="dropdown">
@@ -357,7 +358,9 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
             Cada celda de la tabla se define con la etiqueta td (table data).
             Definimos los bordes de la tabla con el atributo border para mejorar su visibilidad. -->
                     
-                    <label for="modal-toggle" class="btn">Ver tabla</label>
+                    <label for="modal-toggle" class="btn">Ver tabla</label>  <!--En un principio, la tabla desbordaba su contenedor.
+                    Entonces, averigüé cómo solucionar este problema y encontré opción: agregar un botón a la página que abriera
+                    un modal y permitiera visualizar la tabla allí.-->
                     <input type="checkbox" id="modal-toggle">
                     <div class="modal">
                         <div class="modal-contenido">

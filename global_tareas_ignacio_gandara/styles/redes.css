@@ -1,0 +1,41 @@
+div#redes-sociales {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    gap: 20px;
+    margin-top: 10px;
+    color: #2E4053;
+    border: #2E4053 solid 1px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+div#whatsapp-contacto {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    gap: 20px;
+    margin-top: 10px;
+    color: #2E4053;
+    border: #2E4053 solid 1px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+div#contenedor-redes {
+    display: flex;
+    justify-content: space-between; /* separa izquierda y derecha */
+    gap: 20px;                       /* espacio entre los divs */
+    margin: 0 20px;                  /* margen a los lados */
+}
+
+#redes-sociales,
+#whatsapp-contacto {
+    flex: 1;                         /* cada uno ocupa la mitad */
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    color: #2E4053;
+    border: #2E4053 solid 1px;
+    border-radius: 10px;
+}
