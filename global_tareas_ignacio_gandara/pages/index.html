@@ -11,30 +11,18 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
         <title>Fotomanía</title>
         <link rel="icon" href="../assets/imagenes/icono_head_link.png" type="image/png" width="6" height="1">
         <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/index.css">
     </head>
 
     <!-- Cuerpo de la página -->
 
     <body>
 
+    <!-- Coloqué la barra de navegación principal antes del header, para hacer que, con CSS, este se mantuviera todo el tiempo
+     visible (con position: fixed), agregando un margin-top: 80px al header para que no lo tapara. Además, entre el dropdown 
+     de artículos y las opciones de navegación entre páginas incluí un display: flexbox. -->
+
         <nav id="menú-principal">
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="Redes.html">Redes Sociales</a>
-                </li>
-                <li>
-                    <a href="Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Encabezado con imagen, heading principal e índice de navegación con vínculos a otras páginas del sitio-->
-
-        <header id="inicio">
-
             <div class="dropdown">
                 <button class="drop-btn">Artículos</button>
                 <div class="dropdown-content">
@@ -42,6 +30,24 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
                     <a href="./index.html#articulo-2">Artículo 2</a>
                 </div>
             </div>
+            <div class="páginas">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="Redes.html">Redes Sociales</a>
+                    </li>
+                    <li>
+                        <a href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Encabezado con imagen, heading principal e índice de navegación con vínculos a otras páginas del sitio-->
+
+        <header id="inicio">
             
             <img id="foto-principal" src="../assets/imagenes/camara_header.jpg" alt="Cámara fotográfica" width="300" height="200">
             <h1>Fotomanía - Fanáticos de la fotografía</h1>
@@ -57,13 +63,13 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
                 <h2>Artículo 2: ¡Feria de fotografía en diciembre!</h2>
 
                 <nav class="menú-secundario">
-                    <ul>
+                    <ol>
                         <li><a href="./index.html#intro-articulo-2">Introducción</a></li>
                         <li><a href="./index.html#actividades">Actividades</a></li>
                         <li><a href="./index.html#evento-portfolio">Evento PORTFOLIO ACTIVO</a></li>
                         <li><a href="./index.html#ubicacion-y-fecha">Ubicación y fecha</a></li>
                         <li><a href="./index.html#extra">Extra</a></li>
-                    </ul>
+                    </ol>
                 </nav>
 
                 <section id="intro-articulo-2">
@@ -248,13 +254,13 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
             <!--índice con navegación a las distintas secciones del artículo-->
 
             <nav>
-                <ul>
+                <ol>
                     <li><a href="./index.html#introduccion">¿Qué es la fotografía? ¿Qué necesito para comenzar?</a></li>
                     <li><a href="./index.html#partes-camara">Partes de una cámara fotográfica</a></li>
                     <li><a href="./index.html#tipos-camaras">Tipos de cámaras fotográficas</a></li>
                     <li><a href="./index.html#exposicion">La exposición</a></li>
                     <li><a href="./index.html#proximamente">Próximamente...</a></li>
-                </ul>
+                </ol>
             </nav>
 
                 <section id="introduccion">

@@ -1,5 +1,5 @@
 header {
-    margin-top: 10px;
+    margin-top: 80px;
     background-color: #F4F6F7;
     padding: 20px;
     box-shadow: 0 10px 14px rgba(0, 0, 0, 0.1);
@@ -12,23 +12,13 @@ body {
     margin: 0;
     padding: 0 20px;
     background-color: #E5E7E9;
-    
 }
 
-article {
-    background-color: #ffffff;
-    color: #2E4053;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-}
-
-/* Contenedor principal */
+/* Contenedor principal para el dropdown para artículos*/
 .dropdown {
   position: relative; /* Necesario para que el menú desplegable se posicione respecto a él */
   display: inline-block;
+  margin-left: 20px;
 }
 
 /* Estilos para el botón desplegable */
@@ -62,6 +52,7 @@ article {
 /* Cambia el color del fondo al pasar el ratón sobre los enlaces */
 .dropdown-content a:hover {
   background-color: #f1f1f1;
+  color: #4CAF50;
 }
 
 /* Muestra el menú desplegable cuando se pasa el ratón por encima del contenedor */
@@ -95,39 +86,68 @@ button {
 }
 
 h1 {
-    color: #2E4053;
+    color: #599b6d;
     text-align: center;
     font-family: 'Arial', sans-serif;
 }
 
 h2 {
-    color: #34495E;
+    color: #599b6d;
     border-bottom: 2px solid #4CAF50;
     padding-bottom: 5px;
     text-align: center;
 }
 
-nav ul {
+nav a {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    align-items: center;
     text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* Al pasar el ratón se colorea el elemento del nav */
+
+nav a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Debería hacer que el elemento activo cambie su estilo, pero no lo estoy logrando. En un primer momento creí que el problema
+radicaba en que un elemento de mayor especifidad tenía un text-decoration: none que "opacaba" el efecto del elemento activo,
+así que borré esa propiedad (que, además, me di cuenta de que se repetía en varios selectores, por lo que era redundante). Sin 
+embargo, esto no solucionó el problema. Evidentemente algo se me está pasando por alto. */
+
+nav a:active {
+    background-color: #4592a0;
+    color: white;
 }
 
 nav#menú-principal {
-    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F4F6F7;
+    margin-top: 0;
     margin-bottom: 15px;
-    border: #2E4053 solid 1px;
-    border-radius: 10px;
+    border: #2E4053 1px;
+    border-radius: 10px 0px 10px 0px;
     background-color: #ffffff;
-    text-decoration: none;
-}  
+    text-align: center;
+} 
 
 nav#menú-principal ul li {
     display: inline;
     margin: 0 15px;
     text-align: center;
-    text-decoration: none;
 }
 
 footer {
