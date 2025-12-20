@@ -9,7 +9,11 @@ article {
 }
 
 article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     scroll-margin-top: 80px; /* Para que mi barra de navegación no tape la parte superior del contenido */
+    padding: 40px; /* Espaciado interno para mejor lectura */
 }
 
 section {
