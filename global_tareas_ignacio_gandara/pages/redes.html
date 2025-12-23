@@ -18,42 +18,35 @@
      visible (con position: fixed), agregando un margin-top: 80px al header para que no lo tapara. Además, entre el dropdown 
      de artículos y las opciones de navegación entre páginas incluí un display: flexbox. -->
 
-        <nav id="menú-principal">
-            <div class="dropdown">
-                <button class="drop-btn">Artículos</button>
-                <div class="dropdown-content">
-                    <a href="./index.html#articulo-1">Artículo 1</a>
-                    <a href="./index.html#articulo-2">Artículo 2</a>
-                </div>
-            </div>
-            <div class="páginas">
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="redes.html">Redes Sociales</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="anexos.html">Anexos</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Encabezado con imagen, heading principal y barra de navegación con vínculos a otras páginas del sitio -->
-
         <header>
 
-            <img id="foto-principal" src="../assets/imagenes/camara_header.jpg" alt="Cámara fotográfica" width="300" height="200">
-            <h1>Fotomanía - Fanáticos de la fotografía</h1>
+            <div class="nav_container">
+                <a href="index.html" class="nav_logo">
+                    <img src="../assets/imagenes/nav_logo.webp" alt="Logo Fotomanía">
+                    <h2>Fotomanía</h2>
+                </a>
+                <nav class="nav_menu">
+                    <div class="pages_menu">
+                        <a href="index.html" class="nav_item">Inicio</a>
+                        <a href="redes.html" class="nav_item">Redes Sociales</a>
+                        <a href="contacto.html" class="nav_item">Contacto</a>
+                        <a href="multimedia.html" class="nav_item">Multimedia</a>
+                    </div>
+                    <div class="articles_menu">
+                        <a class="drop_btn">Artículos <span>></span></a>
+                        <div class="articles_content_menu">
+                            <a href="./index.html#articulo-1" class="article_item_menu">Artículo 1</a>
+                            <a href="./index.html#articulo-2" class="article_item_menu">Artículo 2</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        <section class="header_redes">
+            <h1>REDES SOCIALES</h1>
+        </section>
 
         </header>
-
-        <!--Desarrollo de la página-->
 
         <main>
 
@@ -97,5 +90,6 @@
                 <img src="../assets/imagenes/facebook_logo_footer_redes.png" width="20" height="20" alt="Contacto Facebook">
             </a>
         </footer>
+        <script src="../scripts/nav_script.js"></script>
     </body>
 </html>

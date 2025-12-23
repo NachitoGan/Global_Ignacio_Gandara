@@ -1,8 +1,37 @@
+.header_contacto {
+    background-image: url('../assets/imagenes/header_contacto.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: var(--fuente-principal);
+    font-size: 2.5rem;
+}
+
+main{
+    display: flex;
+    row-gap: 2%;
+}
+
 #contacto {
     text-align: center;
     color: #2E4053;
     margin-top: 20px;
     padding: 10px;
+}
+
+label{
+    color: var(--color-primario);
+    font-family: var(--fuente-secundaria);
+    font-weight: bold;
+}
+
+input[type="radio"]{
+    color: var(--color-secundario);
 }
 
 input[type="text"], input[type="email"] {
@@ -11,6 +40,8 @@ input[type="text"], input[type="email"] {
     margin: 5px 0 15px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: var(--color-secundario);
+    font-family: var(--fuente-secundaria);
 }
 
 #mensaje {
