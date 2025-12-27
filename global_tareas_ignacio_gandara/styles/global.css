@@ -20,12 +20,10 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    color: var(--color-blanco)
-}
+    color: black;
 html 
 {
     font-size: 16px;
-    scroll-behavior: smooth;
 }
 body 
 {
@@ -34,7 +32,7 @@ body
     background-color: var(--color-fondo);
     color: var(--color-primario);
     font-family: var(--fuente-principal);
-    z-index: 0;    
+    z-index: 0;
 }
 a 
 {
@@ -77,6 +75,23 @@ a
     justify-content: center;
     align-items: center;
 }
+ul, ol
+{
+    margin: 10px 0;
+    padding-left: 5%;
+    
+    & li
+    {
+        font-family: var(--fuente-secundaria);
+        color: var(--color-secundario);    
+    }
+
+}
+b, i, strong, em
+{
+    color: var(--color-secundario);
+}
+
 
 /******* SITE STYLES *******/
 /******* Navigation *******/
