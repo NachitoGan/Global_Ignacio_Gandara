@@ -1,4 +1,5 @@
-article {
+article 
+{
     background-color: #ffffff;
     color: #2E4053;
     padding: 20px;
@@ -8,7 +9,8 @@ article {
     max-width: 800px;
 }
 
-article {
+article 
+{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -17,16 +19,19 @@ article {
     padding: 40px; /* Espaciado interno para mejor lectura */
 }
 
-section {
+section 
+{
     scroll-margin-top: 80px; /* Idem anterior */
 }
 
-#modal-toggle {
+#modal-toggle 
+{
     display: none;
 }
 
 /* Fondo del modal */
-.modal {
+.modal 
+{
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.5);
@@ -41,7 +46,8 @@ section {
     visibility: visible;
 }
 
-.modal-contenido {
+.modal-contenido 
+{
     background: white;
     width: 80%;
     max-height: 80%;
@@ -51,7 +57,8 @@ section {
     overflow: auto;
 }
 
-.cerrar {
+.cerrar 
+{
     float: right;
     font-size: 24px;
     cursor: pointer;

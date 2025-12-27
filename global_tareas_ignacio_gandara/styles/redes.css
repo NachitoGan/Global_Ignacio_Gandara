@@ -1,4 +1,5 @@
-.header_redes {
+.header_redes 
+{
     background-image: url('../assets/imagenes/header_redes.webp');
     background-size: cover;
     background-position: center;
@@ -12,7 +13,8 @@
     font-size: 2.5rem;
 }
 
-div#redes-sociales {
+div#redes-sociales 
+{
     background-color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -24,7 +26,8 @@ div#redes-sociales {
     width: fit-content;
 }
 
-div#whatsapp-contacto {
+div#whatsapp-contacto 
+{
     background-color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -36,7 +39,8 @@ div#whatsapp-contacto {
     width: fit-content;
 }
 
-div#contenedor-redes {
+div#contenedor-redes 
+{
     display: flex;
     justify-content: space-between; /* separa izquierda y derecha */
     gap: 20px;                       /* espacio entre los divs */
@@ -44,7 +48,8 @@ div#contenedor-redes {
 }
 
 #redes-sociales,
-#whatsapp-contacto {
+#whatsapp-contacto 
+{
     flex: 1;                         /* cada uno ocupa la mitad */
     background-color: #ffffff;
     padding: 10px;
