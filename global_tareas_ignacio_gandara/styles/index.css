@@ -51,6 +51,7 @@
         box-shadow: var(--color-primario-alpha) 0px 4px 8px;
         background-color: var(--color-blanco);
         border-radius: 10px 0 10px 0;
+        transition: all .3s ease;
 
         & img
         {
@@ -70,11 +71,12 @@
             font-size: 0.75rem;
             background-color: var(--color-primario-alpha);
 
-            & p
+            & img
             {
                 color: var(--color-blanco);
                 font-family: var(--fuente-secundaria);
                 width: 30%;
+                padding-right: 3%;
                 font-size: 0.75rem;
                 text-align: center;
             }
@@ -101,7 +103,7 @@
                 & a
                 {
                     color: var(--color-blanco);
-
+                    transition: all .3s ease;
                 }
             }
 
@@ -118,15 +120,30 @@
                 & h5
                 {
                     writing-mode: vertical-rl;
-                    
                     text-orientation: mixed;
-                    font-size: 0.8rem;
-                    color: var(--color-blanco)
+                    font-size: 1rem;
+                    color: var(--color-blanco);
+                    font-family: var(--fuente-secundaria)
                 }
             }
         }
     }
+}
 
+.card:hover
+{
+    transform: scale(1.05);
+    box-shadow: #2E4053 0px 6px 12px;
+}
+
+.card_content_column_block a:hover
+{
+    color: var(--color-secundario);
+    transform: scale(1.1);
+    text-shadow: #2E4053 2px 2px 4px;
+    box-shadow: #2E4053 0px 4px 8px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 main 
