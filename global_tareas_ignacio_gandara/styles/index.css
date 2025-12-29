@@ -41,7 +41,8 @@
     justify-content: center;
     gap: 30px;
     position: relative;
-    top: 100px;
+    margin-top: 10px;
+    top: -10px;
 
     & .card
     {
@@ -79,19 +80,20 @@
                 padding: 20px 10px;
                 font-size: 0.9rem;
                 opacity: 0;
-                transition: opacity 0.3s ease;
+                transition: opacity 0.5s ease;
             }
         }
 
         & .card_content
         {
-            height: 30%;
+            height: 32%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 0 0 5%;
             font-size: .9rem;
             background-color: var(--color-primario-alpha);
+            transition: all .3s ease;
 
             & img
             {
@@ -109,7 +111,7 @@
                 color: var(--color-blanco);  
                 padding-right: 3%;             
 
-                & h4
+                & h5
                 {
                     font-size: 0.75rem;
                     text-align: center;
@@ -135,7 +137,7 @@
                 justify-content: center;
                 align-items: center;
                 box-shadow: #2E4053 0px 4px 8px;
-                & h5
+                & h4
                 {
                     writing-mode: vertical-rl;
                     text-orientation: mixed;
@@ -153,17 +155,18 @@
     transform: scale(1.1);
     box-shadow: #2E4053 0px 6px 12px;
 
-    & .card_img_text_hidden .text_hidden
+    & .card_img_text_hidden
     {
-        opacity: 1;
-    }
-
-    & img{
-        filter: brightness(50%);
+        & .text_hidden
+        {
+            opacity: 1;
+        }
+        & img
+        {
+            filter: brightness(50%);
+        }
     }
 }
-
-
 
 .card_content_column_block a:hover
 {
@@ -175,7 +178,7 @@
 
 main 
 {
-    padding-top: 20vh; /* Para dejar espacio para la sección de cards */
+    padding-top: ; /* Para dejar espacio para la sección de cards */
 }
 
 /******* Article and Section Styles *******/
