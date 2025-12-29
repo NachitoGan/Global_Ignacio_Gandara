@@ -50,35 +50,53 @@
         width: 300px;
         box-shadow: var(--color-primario-alpha) 0px 4px 8px;
         background-color: var(--color-blanco);
-        border-radius: 10px 0 10px 0;
+        border-radius: 20px 0 10px 0;
         transition: all .3s ease;
 
-        & img
+        & .card_img_text_hidden
         {
             width: 100%;
-            height: 60%;
+            height: 70%;
             border-top-left-radius: 10px;
+            transition: all .3s ease;
+
+            & img
+            {
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 20px;
+                object-fit: cover;
+            }
+            & .text_hidden
+            {
+                position: relative;
+                top: -250px;
+                box-shadow: black 0px 0px 50px 0px;
+                text-align: center;
+                color: var(--color-blanco);
+                font-family: var(--fuente-secundaria);
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 20px 10px;
+                font-size: 0.9rem;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
         }
 
         & .card_content
         {
-            height: 40%;
-            
+            height: 30%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 0 0 5%;
-            font-size: 0.75rem;
+            font-size: .9rem;
             background-color: var(--color-primario-alpha);
 
             & img
             {
-                color: var(--color-blanco);
-                font-family: var(--fuente-secundaria);
                 width: 30%;
                 padding-right: 3%;
-                font-size: 0.75rem;
-                text-align: center;
             }
 
             & .card_content_column_block
@@ -132,18 +150,27 @@
 
 .card:hover
 {
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: #2E4053 0px 6px 12px;
+
+    & .card_img_text_hidden .text_hidden
+    {
+        opacity: 1;
+    }
+
+    & img{
+        filter: brightness(50%);
+    }
 }
+
+
 
 .card_content_column_block a:hover
 {
     color: var(--color-secundario);
     transform: scale(1.1);
     text-shadow: #2E4053 2px 2px 4px;
-    box-shadow: #2E4053 0px 4px 8px;
-    padding: 5px;
-    border-radius: 10px;
+
 }
 
 main 
