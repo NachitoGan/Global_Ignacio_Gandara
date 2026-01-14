@@ -110,7 +110,7 @@ b, i, strong, em
   width: 100%;
   padding: 0 2%;
   z-index: 1000;
-  transition: .3s;
+  transition: all .3s ease;
 
   /* Parte del logo y nombre */
   & .nav_logo
@@ -122,6 +122,7 @@ b, i, strong, em
     & img 
     {
       height: 70%;
+      transition: all .3s ease;
     }
     & h2 
     {
@@ -239,7 +240,7 @@ b, i, strong, em
       row-gap: 25px;
 
       /* Botón de artículos */
-      & .drop_btn
+      & .articles_drop_btn
       {
         color: var(--color-blanco);
       }
@@ -247,16 +248,28 @@ b, i, strong, em
       /* Artículos dentro de desplegable */
       & .articles_content_menu
       {
+        opacity: 0;
         display: flex;
         flex-direction: column;
         row-gap: 25px;
+        transition: all .3s ease;
         & .article_item_menu
         {
           color: var(--color-blanco);
         }
+
+        /* Cuando se toca el botón de artículos, se 
+        hace visible la lista de artículos */
+        &.articles_menu_active
+        {
+          opacity: 1;
+        }
       }
     }
   }
+
+
+  
 
   /* Cuando se activa el toggle, aparece el Menú */
   & .nav_toggle.toggle_active~.nav_menu
@@ -264,6 +277,42 @@ b, i, strong, em
     justify-content: center;
     height: 45vh;
     opacity: 1;
+  }
+
+  /* Navbar verde y más chico cuando se scrollea abajo */
+  &.nav_active
+  {
+    background-color: var(--color-primario);
+    height: 10vh;
+    box-shadow: 0 10px 10px;
+
+    & .nav_logo
+    {
+      /* img del logo más chico al scrollear */
+      & img
+      {
+        height: 50%;
+      }
+
+      /* Idem h2 */
+      & h2
+      {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* Subo un poco más el botón hamburguesa */
+    & .nav_toggle
+    {
+      top: .5%
+    }
+
+    /* Menú del nav se vuelve verde con algo de con nav 
+    active, de modo que combine con el nuevo color del nav */
+    & .nav_menu
+    {
+      background-color: var(--color-primario-alpha);
+    }
   }
 }
 
@@ -312,15 +361,19 @@ b, i, strong, em
   
       & .nav_menu
       {
+        opacity: 1;
         position: relative;
-        top: 0;
+        top: 50%;
         display: flex;
+        flex-direction: row;
         align-items: center;
+        justify-content: end;
         column-gap: 15px;
   
         & .pages_menu
         {
           display: flex;
+          flex-direction: row;
           column-gap: 50px;
             
           & .nav_item
@@ -346,7 +399,7 @@ b, i, strong, em
           width: max-content;
           position: relative;
   
-          & .drop_btn 
+          & .articles_drop_btn 
             {
               text-decoration: none;
               color: var(--color-blanco);
@@ -399,7 +452,7 @@ b, i, strong, em
           }
       }
   }
-  .drop_btn:hover
+  .articles_drop_btn:hover
   {
     transform: scale(1.1);
     text-shadow: #2E4053 2px 2px 4px;
@@ -426,6 +479,8 @@ b, i, strong, em
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       height: 7vh;
       box-shadow: #7F8C8D 0px 4px 8px;
+
+     
   }
 }
 
