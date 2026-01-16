@@ -108,7 +108,6 @@ b, i, strong, em
   position: fixed;
   height: 12vh;
   width: 100%;
-  padding: 0 2%;
   z-index: 1000;
   transition: all .3s ease;
 
@@ -116,6 +115,7 @@ b, i, strong, em
   & .nav_logo
   {
     display: flex;
+    padding-left: 2%;
     align-items: center;
     column-gap: 15px;
 
@@ -199,24 +199,27 @@ b, i, strong, em
     }
   }
 
-  /* Menú desplegable */
+  /* Menú desplegable (previo a ser desplegado) */
   & .nav_menu
   {
-    font-size: 1.1rem;
-    height: 35vh;
-    opacity: 0;
-    right: 0;
-    position: fixed;
-    top: -200px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    transition: all .3s ease;
     background: linear-gradient(to bottom,
     rgba(0, 0, 0, 0.8),
     rgba(0,0,0,0));
+    font-size: 1.1rem;
+    height: 35vh;
+    top: 10vh;
+    padding-bottom: 10vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    text-align: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .3s ease;
+    width: 100%;
     row-gap: 25px;
+    padding-top: 5vh;
 
       /* Enlaces a páginas del sitio */
       & .nav_item
@@ -230,10 +233,9 @@ b, i, strong, em
   /* Cuando se activa el toggle, aparece el Menú */
   & .nav_toggle.toggle_active~.nav_menu
   {
-    
+    transform: scaleY(1);
     opacity: 1;
-    top: 9vh;
-    padding-top: 5vh;
+
   }
 
   /* Navbar verde y más chico cuando se scrollea abajo */
@@ -264,17 +266,16 @@ b, i, strong, em
       top: 0;
     }
 
-    /* Menú del nav se vuelve verde con algo de con nav 
-    active, de modo que combine con el nuevo color del nav */
-    & .nav_menu
+    /* Cuando el nav se vuelve verde con nav active, cambia el
+    menú de modo que combine con el nuevo color */
+    & .toggle_active~.nav_menu
     {
+      transform: scaleY(1);
+      opacity: 1;
       position: fixed;
-      top: 300vh;
       height: 35vh;
       justify-content: center;
       align-content: center;
-      padding-top: 0;
-      padding-bottom: 10vh;
       background: linear-gradient(to bottom,
       var(--color-primario),
       var(--color-primario-alpha)
