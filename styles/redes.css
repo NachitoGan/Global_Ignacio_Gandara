@@ -1,3 +1,15 @@
+/****** NAVIGATION ******/
+/*** MOBILE ***/
+/****** NAVIGATION ******/
+/* Menú desplegable */
+
+.toggle_active~.nav_menu
+{
+    background: linear-gradient(to bottom,
+    rgb(117, 153, 184, .9),
+    rgb(117, 153, 184, .1));
+}
+
 .header_redes 
 {
     background-image: url('../assets/imagenes/header_redes.webp');

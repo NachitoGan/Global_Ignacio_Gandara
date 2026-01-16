@@ -203,23 +203,19 @@ b, i, strong, em
   & .nav_menu
   {
     font-size: 1.1rem;
+    height: 35vh;
     opacity: 0;
     right: 0;
     position: fixed;
-    top: 8vh;
+    top: -200px;
     display: flex;
     flex-direction: column;
-    height: 0;
     width: 100%;
-    justify-content: center;
-    align-content: center;
     text-align: center;
     transition: all .3s ease;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0,0,0,0));
     row-gap: 25px;
 
       /* Enlaces a páginas del sitio */
@@ -227,28 +223,24 @@ b, i, strong, em
       {
         color: var(--color-blanco);
       }
-    }
+    
 
-    /* Menú de artículos */
-    .articles_menu
-    {
-      display: flex;
-      flex-direction: column;
   }
 
   /* Cuando se activa el toggle, aparece el Menú */
   & .nav_toggle.toggle_active~.nav_menu
   {
-    justify-content: center;
-    height: 35vh;
+    
     opacity: 1;
+    top: 9vh;
+    padding-top: 5vh;
   }
 
   /* Navbar verde y más chico cuando se scrollea abajo */
   &.nav_active
   {
     background-color: var(--color-primario);
-    height: 8vh;
+    height: 10vh;
     box-shadow: 0 10px 10px;
 
     & .nav_logo
@@ -276,21 +268,17 @@ b, i, strong, em
     active, de modo que combine con el nuevo color del nav */
     & .nav_menu
     {
+      position: fixed;
+      top: 300vh;
+      height: 35vh;
+      justify-content: center;
+      align-content: center;
+      padding-top: 0;
+      padding-bottom: 10vh;
       background: linear-gradient(to bottom,
       var(--color-primario),
       var(--color-primario-alpha)
       );
-
-
-      & .articles_menu
-      {
-
-        & .articles_drop_btn
-        {
-          
-          background-color: var(--color-primario-alpha);
-        }
-      }
     }
   }
 }

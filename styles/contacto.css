@@ -1,8 +1,19 @@
+/********* NAVIGATION *********/
+/****** MOBILE ******/
+@media screen and (max-width: 738px)
+{
+    .toggle_active~.nav_menu
+{
+    background: linear-gradient(to bottom,
+    rgba(25, 50, 65, .5),
+    rgba(25, 50, 65, 0));
+}
+
 .header_contacto 
 {
     background-image: url('../assets/imagenes/header_contacto.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 80%;
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -97,4 +108,6 @@ legend
     font-weight: bold;
     padding: 0 10px;
     color: #2E4053;
+}
+
 }
