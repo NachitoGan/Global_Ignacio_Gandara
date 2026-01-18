@@ -51,6 +51,7 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
             <section class="home">
                 <h1><span>FOTOMANÍA</span></h1>
                 <h2>FANÁTICOS DE LA <span>FOTOGRAFÍA</span></h2>
+                <a href="./index.html#cards_section"><button class="btn">CONOCENOS</button></a>
             </section>
             
 
@@ -61,7 +62,7 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
 
         <main>
 
-                        <section class="cards_container">
+            <section class="cards_container" id="cards_section">
                 <div class="card">
                     <div class="card_img_text_hidden">
                         <img src="assets/imagenes/cursos_card_home.jpg" alt="">
@@ -136,12 +137,15 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
                 </div>
             </section>
             
+            <!-- La idea del siguiente menú sería que, mediante JS, se vayan actualizando los títulos -->
             <section class="articles_menu_section" id="articles_menu_section">
                 <h2>Artículos</h2>
-                <a href="./index.html#articulo-1" class="article_item_menu btn">Artículo 1</a>
-                <a href="./index.html#articulo-2" class="article_item_menu btn">Artículo 2</a>
-                <a href="./index.html#articulo-2" class="article_item_menu btn">Artículo 3</a>
-                <a href="./index.html#articulo-2" class="article_item_menu btn">Artículo 4</a>
+                <div class="articles_menu">
+                    <a href="./index.html#articulo-1" class="article_item_menu">Artículo 1</a>
+                    <a href="./index.html#articulo-2" class="article_item_menu">Artículo 2</a>
+                    <a href="./index.html#articulo-2" class="article_item_menu">Artículo 3</a>
+                    <a href="./index.html#articulo-2" class="article_item_menu">Artículo 4</a>
+                </div>
             </section>
 
             <article id="articulo-2">
@@ -234,12 +238,15 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
                     eventos que te interesan y luego "+ Copiar a mi calendario" para agregarlos individualmente.
                     </p>
 
-                    <p>
-                    <b>NOTA:</b> Recuerda que algunos talleres requieren inscripción previa y pueden tener un costo
-                    asociado. Asegúrate de revisar los detalles en el calendario y registrarte con anticipación si 
-                    es necesario.
-                    </p>
+                    <br>
 
+                    <div class="note_article">
+                        <p>
+                        <b>NOTA:</b> Recuerda que algunos talleres requieren inscripción previa y pueden tener un costo
+                        asociado. Asegúrate de revisar los detalles en el calendario y registrarte con anticipación si 
+                        es necesario.
+                        </p>
+                    </div>
                     <iframe src="https://calendar.google.com/calendar/embed?src=a43703e3a3f58d49b6fbc4a44cc3ef766968cb4dad2ccb12ed0a4172756eed66%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires" 
                     style="border: 0" 
                     width="800" 
@@ -591,13 +598,13 @@ eran hijos de otros. Espero que ahora haya quedado de forma más correcta-->
                     <p>Veamos de forma gráfica cómo interactúan estos tres elementos del triángulo de exposición:</p>
 
                     <!-- Uso de la etiqueta meter para representar gráficamente los tres elementos del triángulo de exposición. -->
-                        
+                    <br>
                     <p><b>Apertura del diafragma: </b></p><meter class="meter" min="0" value="15" max="100">Apertura del diafragma</meter>
 
                     <p><b>Velocidad de obturación: </b></p><meter class="meter" min="0" value="30" max="100">Velocidad de obturación</meter>
                         
                     <p><b>Sensibilidad ISO: </b></p><meter class="meter" min="0" value="55" max="100">Sensibilidad ISO</meter>
-                        
+                    <br>
                     <p>
                     Como puede apreciarse, la apertura del diafragma y la velocidad de obturación tienen valores más bajos, mientras que 
                     la sensibilidad ISO tiene un valor más alto. Esto se debe a que, en condiciones de iluminación adecuadas, es preferible utilizar

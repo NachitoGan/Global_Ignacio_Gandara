@@ -7,8 +7,9 @@
     --color-primario: rgb(85, 138, 120);
     --color-primario-alpha: rgba(85, 138, 120, 0.8);
     --color-secundario: rgb(147, 72, 63);
+    --color-secundario-alpha: rgba(147, 72, 63, 0.8);
+    --color-transparente: rgba(0, 0, 0, 0,2);
     --color-blanco: rgb(255, 255, 255);
-
     --fuente-principal: 'Sekuya', sans-serif;
     --fuente-secundaria: Playfair Display, serif;
     --fuente-terciaria: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -454,6 +455,9 @@ b, i, strong, em
 
 main 
 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     margin: 0 auto;
     padding: 20px;
     background: linear-gradient(to right, 
