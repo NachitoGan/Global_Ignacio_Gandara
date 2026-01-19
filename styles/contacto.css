@@ -1,31 +1,63 @@
-/********* NAVIGATION *********/
-/****** MOBILE ******/
-@media screen and (max-width: 738px)
+/****** NAVIGATION ******/
+/*** MOBILE ***/
+@media screen and (max-width: 767px)
 {
 .toggle_active~.nav_menu
-{
-    background: linear-gradient(to bottom,
-    rgba(25, 50, 65, 0),
-    rgba(25, 50, 65, 0.5),
-    rgba(25, 50, 65, 0.5),
-    rgba(25, 50, 65, 0));
+    {
+        background: linear-gradient(to bottom,
+        rgba(25, 50, 65, 0),
+        rgba(25, 50, 65, 0.5),
+        rgba(25, 50, 65, 0.5),
+        rgba(25, 50, 65, 0));
+    }
 }
 
+/*** TABLET ***/
+@media screen and (min-width: 768px)
+{
+
+}
+
+/*** DESKTOP ***/
+@media screen and (min-width: 1200px)
+{
+
+}
+
+/****** HEADER CONTACTO ******/
+/*** MOBILE ***/
+@media screen and (max-width: 767px)
+{
 .header_contacto 
-{
-    background-image: url('../assets/imagenes/header_contacto.jpg');
-    background-size: cover;
-    background-position: 80%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: var(--fuente-principal);
-    font-size: 2.5rem;
+    {
+        background-image: url('../assets/imagenes/header_contacto.jpg');
+        background-size: cover;
+        background-position: 80%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: var(--fuente-principal);
+        font-size: 1.5rem;
+    }
 }
 
+/*** TABLET ***/
+@media screen and (min-width: 768px)
+{
+
+}
+
+/*** DESKTOP ***/
+@media screen and (min-width: 1200px)
+{
+
+}
+
+/********* MAIN *********/
+/*** MOBILE ***/
 main
 {
     display: flex;
@@ -45,38 +77,7 @@ main
     margin-top: 20px;
     padding: 10px;
 }
-
-label
-{
-    color: var(--color-primario);
-    font-family: var(--fuente-secundaria);
-    font-weight: bold;
-}
-
-
-
-input[type="text"], input[type="email"] 
-{
-    width: 30%;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: var(--color-secundario);
-    font-family: var(--fuente-secundaria);
-}
-
-#mensaje 
-{
-    width: 80%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: none;
-}
-
-form 
+form
 {
     max-width: 600px;
     margin: 0 auto;
@@ -84,32 +85,70 @@ form
     padding: 20px;
     border: #2E4053 dashed 1px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px black;
+    
+    & fieldset 
+    {
+        border: #4dbfc3 solid 1px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        font-family: var(--fuente-secundaria);
+        text-align: left;
+
+        & legend
+        {
+            font-weight: bold;
+            padding: 0 10px;
+            color: #2E4053;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
+        & label
+        {
+            color: var(--color-primario);
+            font-family: var(--fuente-secundaria);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        & input[type="text"], input[type="email"] 
+        {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid var(--color-secundario);
+            border-radius: 5px;
+            color: var(--color-secundario);
+            font-family: var(--fuente-secundaria);
+        }
+        
+        & textarea
+        {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        
+        & input:focus, textarea:focus 
+        {
+            border-color: #4CAF50;
+            outline: none;
+            transform: scale(1.02);
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+        }
+    }
 }
 
-fieldset 
-{
-    border: #4dbfc3 solid 1px;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    font-family:'Courier New', Courier, monospace;
-}
 
-input:focus, textarea:focus 
-{
-    border-color: #4CAF50;
-    outline: none;
-    transform: scale(1.02);
-    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
-}
 
-legend 
-{
-    font-weight: bold;
-    padding: 0 10px;
-    color: #2E4053;
-}
 
-}
+
+
+

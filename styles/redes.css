@@ -57,46 +57,7 @@
 /*** MOBILE ***/
 @media screen and (max-width: 767px)
 {
-    .redes_container
-    {
-        border-radius: 20px;
-        background-color: var(--color-primario);
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-        box-shadow: 20px 20px 30px black;
-        margin: 30px 10px;
-
-        & h2
-        {
-            color: var(--color-blanco);
-        }
-
-        & .redes_squere
-        {
-            background-color: var(--color-blanco);
-            border-radius: 10px;
-            padding: 20px 10px;
-            text-align: center;
-            box-shadow: 5px 5px 20px black;
-            display: flex;
-            column-gap: 15px;
-            
-            & p
-            {
-                color: var(--color-primario);
-                font-size: 1.2rem;
-            }
-
-            & .logos_redes
-            {
-                display: flex;
-                flex-direction: column;
-            }
-
-        }
-    }
+    
 }
 
 /*** TABLET ***/

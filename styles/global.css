@@ -73,6 +73,43 @@ a
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
 }
+
+.global_container
+    {
+        border-radius: 20px;
+        background-color: var(--color-primario);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        box-shadow: 20px 20px 30px black;
+        margin: 30px 10px;
+
+        & h2
+        {
+            color: var(--color-blanco);
+        }
+
+        & .sub_container
+        {
+            background-color: var(--color-blanco);
+            border-radius: 10px;
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 5px 5px 20px black;
+            display: flex;
+            column-gap: 15px;
+
+            height: auto;
+            
+            & p
+            {
+                color: var(--color-primario);
+                font-size: 1.2rem;
+            }
+        }
+    }
+
 .center
 {
     display: flex;
@@ -95,7 +132,6 @@ b, i, strong, em
 {
     color: var(--color-secundario);
 }
-
 
 /********* SITE STYLES ********/
 /****** NAVIGATION ******/

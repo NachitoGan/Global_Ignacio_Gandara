@@ -60,7 +60,7 @@
              función que permita corroborar que se han enviado, puesto que, por ejemplo, si no completan los datos requeridos pero envían la 
              información se produce la contradicción de indicar que falta completar algo pero confirmar recepción de datos.-->
 
-            <section id="contacto">
+            <section id="contacto" class="form_section_contact">
                 <h2>Contacto</h2>
                 <p>Si tienes alguna pregunta, sugerencia o simplemente quieres ponerte en contacto con nosotros, no dudes en enviarnos un 
                     correo electrónico a través del siguiente formulario:</p>
@@ -77,10 +77,12 @@
                         <input type="date" id="nacimiento" name="nacimiento" required><br><br>
 
                         <label for="nombre">Género</label><br>
-                        <input type="radio" id="masculino" name="genero" value="masculino"> Masculino
-                        <input type="radio" id="femenino" name="genero" value="femenino"> Femenino
-                        <input type="radio" id="x" name="genero" value="x"> x
-                        <input type="radio" id="prefiero-no-decirlo" name="genero" value="prefiero-no-decirlo"> Prefiero no decirlo<br><br>
+                        <div class="genre_list_form">
+                            <input type="radio" id="masculino" name="genero" value="masculino"> Masculino
+                            <input type="radio" id="femenino" name="genero" value="femenino"> Femenino
+                            <input type="radio" id="x" name="genero" value="x"> x
+                            <input type="radio" id="prefiero-no-decirlo" name="genero" value="prefiero-no-decirlo"> Prefiero no decirlo<br><br>
+                        </div>
 
                         <label for="mensaje">Mensaje*</label><br>
                         <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="¡Dejanos tu opinión, duda o inquietud!" required></textarea><br>
