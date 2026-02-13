@@ -1,16 +1,125 @@
-.header_multimedia
+/****** NAVIGATION ******/
+/*** MOBILE ***/
+/* MOBILE */
+
+@media screen and (max-width: 767px)
 {
-    background-image: url('../assets/imagenes/header_multimedia.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: var(--fuente-principal);
-    font-size: 2.5rem;
+    .toggle_active~.nav_menu
+    {
+        background: linear-gradient(to bottom,
+        rgb(117, 153, 184, .1),
+        rgb(117, 153, 184, .9),
+        rgb(117, 153, 184, .1));
+    }
+}
+
+/**** TABLET ****/
+@media screen and (min-width: 768px)
+{
+
+}
+
+/**** DESKTOP ****/
+@media screen and (min-width: 1200px)
+{
+    
+}
+
+/******* HEADER *******/
+/**** MOBILE ****/
+@media screen and (max-width: 767px)
+{
+    .header_multimedia
+    {
+        background-image: url('../assets/imagenes/header_multimedia.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: var(--fuente-principal);
+        font-size: 1.2rem;
+    }
+}
+
+/**** TABLET ****/
+@media screen and (min-width: 768px)
+{
+    
+}
+
+/**** DESKTOP ****/
+@media screen and (min-width: 1200px)
+{
+    .header_multimedia
+    {
+        background-image: url('../assets/imagenes/header_multimedia.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: var(--fuente-principal);
+        font-size: 2.5rem;
+    }
+}
+
+
+/******* MAIN *******/
+/**** MOBILE ****/
+@media screen and (max-width: 767px)
+{
+    main
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+            
+        & .introduction_main_multimedia
+        {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        & .section_multimedia
+        {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            
+            & h4
+            {
+                font-size: 1.5rem;    
+            }
+
+            video, audio
+            {
+                border-radius: 30px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
+
+/**** TABLET ****/
+@media screen and (min-width: 768px)
+{
+    
+}
+
+/**** DESKTOP ****/
+@media screen and (min-width: 1200px)
+{
+    
 }
 
 main
@@ -19,3 +128,5 @@ main
     flex-direction: column;
     column-gap: 5%;
 }
+
+
