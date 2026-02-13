@@ -13,6 +13,9 @@
     --fuente-principal: 'Sekuya', sans-serif;
     --fuente-secundaria: Playfair Display, serif;
     --fuente-terciaria: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --letra-mobile-chica: 0.8rem;
+    --letra-mobile-normal: 1.2rem;
+    --letra-mobile-grande: 2rem;
 }
 
 /******* RESET *******/
@@ -43,6 +46,43 @@ a
     text-decoration: none;
     color: var(--color-primario);
 }
+
+
+
+h2
+  {
+    font-size: 2rem;
+    margin-bottom: 5%;
+  }
+
+p
+  {
+    font-size: 1.2rem;
+    margin-bottom: 10%;
+  }
+
+  /*** MOBILE GENERALES ***/
+  @media screen and (max-width: 767px)
+
+  {
+
+    p
+    {
+      font-size: var(--letra-mobile-normal);
+    }
+    .letra_chica
+    {
+      font-size: var(--letra-mobile-chica);
+    }
+    .letra_normal
+    {
+      font-size: var(--letra-mobile-normal);
+    }
+    .letra_grande
+    {
+      font-size: var(--letra-mobile-grande);
+    }
+  }
 
 /******* UTILITIES *******/
 .btn

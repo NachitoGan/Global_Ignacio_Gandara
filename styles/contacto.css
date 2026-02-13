@@ -192,6 +192,7 @@
                     border-radius: 5px;
                     color: var(--color-secundario);
                     font-family: var(--fuente-secundaria);
+                    font-size: var(--letra-mobile-normal);
                 }
             }
             & label
@@ -210,6 +211,7 @@
                 & textarea
                 {
                     width: 100%;
+                    font-size: 1.2rem;
                     height: 100px;
                     padding: 10px;
                     border: 1px solid #ccc;
